@@ -1,0 +1,5786 @@
+! Title: -ad-Block
+! Version: 1.0
+! Last updated: 2024-11-18
+! Description: Blocks ads, trackers, and intrusive elements from websites and apps.
+! Author: RiMiLBeTaX
+
+! --------------------------------
+! General Ad Networks (Extended)
+! --------------------------------
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||adservice.google.com^
+||adform.net^
+||ads.yahoo.com^
+||adroll.com^
+||outbrain.com^
+||taboola.com^
+||media.net^
+||revcontent.com^
+||adblade.com^
+||popads.net^
+||zedo.com^
+||clicksor.com^
+||inmobi.com^
+||vungle.com^
+||adcolony.com^
+||leadbolt.com^
+||adskeeper.co.uk^
+||buysellads.com^
+||openx.net^
+||rubiconproject.com^
+||contextweb.com^
+||smartadserver.com^
+||appnexus.com^
+||pubmatic.com^
+||spotxchange.com^
+||cpxinteractive.com^
+||trafficjunky.net^
+||exoclick.com^
+||adsterra.com^
+||mgid.com^
+||adplugg.com^
+||adperium.com^
+||propellerads.com^
+||triplelift.com^
+||gumgum.com^
+||yahooapis.com/ads^
+||clickbank.com^
+||vibrantmedia.com^
+||kontera.com^
+||adkernel.com^
+||adtegrity.com^
+||epom.com^
+||vertamedia.com^
+||adcash.com^
+||cpmstar.com^
+||adbrite.com^
+||bidvertiser.com^
+||popcash.net^
+||adxcore.com^
+||voluum.com^
+||aarki.com^
+||tapjoyads.com^
+||yieldmo.com^
+||adsupply.com^
+||adreactor.com^
+||adview.com^
+||sublimehq.com^
+||mobfox.com^
+||leadboltapps.net^
+||mobpartner.com^
+||affiliatly.com^
+||sklik.cz^
+||onetag.io^
+||infolinks.com^
+||powerlinks.com^
+||adxvalue.com^
+||adhitz.com^
+||adstargets.com^
+||traffichaus.com^
+||spoutable.com^
+||nativex.com^
+||mobvista.com^
+||avocarrot.com^
+||adnow.com^
+||ads.exchange^
+||adsensor.net^
+||mediaplex.com^
+||ibillboard.com^
+||adxms.com^
+||runadtag.com^
+||adpushup.com^
+||finteza.com^
+||adsfor.me^
+||amobee.com^
+||celtra.com^
+||adshelter.com^
+||ayboll.com^
+||smartyads.com^
+||brid.tv^
+||colossusssp.com^
+||playbuzz.com^
+||storygize.com^
+||brandnew.io^
+||bannerflow.com^
+||admanmedia.com^
+||platform161.com^
+||rtbidder.net^
+||switchads.com^
+||adzmedia.com^
+||aerserv.com^
+||adsplacer.com^
+||yieldads.com^
+||pubnative.net^
+||adbooth.net^
+||themoneytizer.com^
+||adfox.ru^
+||adsclick.pl^
+||adhigh.net^
+||richmediaads.com^
+||adclarity.com^
+||adtriba.com^
+||adsrv.eacdn.com^
+||adsology.com^
+||adglare.net^
+||match.com/ads^
+||adform.com^
+||xandr.net^
+||ntwrk.mobi^
+||optimatic.com^
+||adsolut.io^
+||adgoal.de^
+||adsense.pl^
+||tradedoubler.com^
+||creatives.live^
+||clicktripz.com^
+||content.ad^
+||adsptp.com^
+||admatic.com^
+||adshot.de^
+||adviews.com^
+||campaigns.ads^
+||offers.ads^
+||ads.trafficstars.com^
+||teads.tv^
+||adjelly.com^
+||runative-scripts.com^
+||optad360.io^
+||adition.com^
+||ads.goldbach.com^
+||imonomy.com^
+
+! End of General Ad Networks List
+
+/* General Ad Networks Blocking */
+##.ad-network, 
+##.ad-container, 
+##.advertisement-container, 
+##.ads-wrapper, 
+##.ad-slot, 
+##.ads-container, 
+##.advert-ad, 
+##.network-ad, 
+##.ad-network-wrapper, 
+##.ads-box, 
+##.ad-banner-wrapper, 
+##.ads-frame {
+    display: none !important;
+}
+
+/* Google AdSense and Other Google Ads */
+##.adsbygoogle, 
+##.google-ad, 
+##.adsense-ad, 
+##.google-ads, 
+##.google-ad-banner, 
+##.google-ad-container, 
+##.google-sponsor-banner {
+    display: none !important;
+}
+
+/* Facebook Ads */
+##.fb-ad, 
+##.facebook-ad, 
+##.fb-ad-wrapper, 
+##.facebook-ad-banner, 
+##.fb-ads-container, 
+##.fb-ad-slot {
+    display: none !important;
+}
+
+/* DoubleClick and Other Ad Servers */
+##.dc-ad, 
+##.doubleclick-ad, 
+##.dfp-ad, 
+##.dfp-container, 
+##.doubleclick-banner, 
+##.doubleclick-wrapper, 
+##.adserver-ad, 
+##.adserver-container {
+    display: none !important;
+}
+
+/* Amazon Ads */
+##.amazon-ad, 
+##.amazon-banner-ad, 
+##.amazon-ad-wrapper, 
+##.ad-amazon, 
+##.amazon-ads-container, 
+##.amazon-ad-slot {
+    display: none !important;
+}
+
+/* Outbrain Ads */
+##.outbrain-ad, 
+##.outbrain-widget, 
+##.outbrain-ad-container, 
+##.outbrain-banner, 
+##.outbrain-ads-container {
+    display: none !important;
+}
+
+/* Taboola Ads */
+##.taboola-ad, 
+##.taboola-widget, 
+##.taboola-ad-container, 
+##.taboola-banner, 
+##.taboola-ads-container {
+    display: none !important;
+}
+
+/* Revcontent Ads */
+##.revcontent-ad, 
+##.revcontent-widget, 
+##.revcontent-ad-container, 
+##.revcontent-banner, 
+##.revcontent-ads-container {
+    display: none !important;
+}
+
+/* AdRoll Ads */
+##.adroll-ad, 
+##.adroll-widget, 
+##.adroll-ad-container, 
+##.adroll-banner, 
+##.adroll-ads-container {
+    display: none !important;
+}
+
+/* Media.net Ads */
+##.media-net-ad, 
+##.media-net-banner, 
+##.media-net-widget, 
+##.media-net-ad-container, 
+##.media-net-ads-container {
+    display: none !important;
+}
+
+/* Propeller Ads */
+##.propeller-ad, 
+##.propeller-widget, 
+##.propeller-ad-container, 
+##.propeller-banner, 
+##.propeller-ads-container {
+    display: none !important;
+}
+
+/* Infolinks Ads */
+##.infolinks-ad, 
+##.infolinks-widget, 
+##.infolinks-ad-container, 
+##.infolinks-banner, 
+##.infolinks-ads-container {
+    display: none !important;
+}
+
+/* Sponsored Content from Various Networks */
+##.sponsored-content, 
+##.sponsored-post, 
+##.sponsored-banner, 
+##.sponsored-widget, 
+##.sponsored-container {
+    display: none !important;
+}
+
+/* Video Network Ads */
+##.video-network-ad, 
+##.video-ad-wrapper, 
+##.video-ad-banner, 
+##.video-ad-container, 
+##.video-ads-container {
+    display: none !important;
+}
+
+
+! --------------------------------
+! Social Media Ads (Extended List)
+! --------------------------------
+||facebook.com/ads^
+||facebook.com/ad_delivery^
+||facebook.com/xti.php^
+||pixel.facebook.com^
+||instagram.com/ads^
+||instagram.com/promotion^
+||linkedin.com/ads^
+||linkedin.com/insights^
+||linkedin.com/track^
+||tiktok.com/ads^
+||ads.tiktokv.com^
+||ads.pinterest.com^
+||pinterest.com/promoted_pins^
+||twitter.com/ads^
+||twitter.com/i/adsct^
+||snapchat.com/ads^
+||ads.snapchat.com^
+||youtube.com/get_midroll^
+||youtube.com/api/stats/ads^
+||youtube.com/pagead^
+||yt3.ggpht.com/ads^
+||ytstatic.l.google.com/ads^
+||reddit.com/ads^
+||ads.redditmedia.com^
+||tumblr.com/ads^
+||tumblr.com/advertise^
+||weibo.com/ads^
+||weibo.com/promotion^
+||wechat.com/ads^
+||qq.com/ads^
+||vk.com/ads^
+||ok.ru/ads^
+||ads.whatsapp.com^
+||discordapp.com/ads^
+||telegram.org/ads^
+||threads.net/ads^
+||mastodon.social/ads^
+||kakao.com/ads^
+||line.me/ads^
+||zalo.me/ads^
+||clubhouse.com/ads^
+||bebo.com/ads^
+||mix.com/ads^
+||viber.com/ads^
+||ads.twitter.com^
+||bluebird-twitter.com/ads^
+||ads.sina.com.cn^
+||ads.xiaohongshu.com^
+||dailymotion.com/ads^
+||vimeo.com/ads^
+||ads.triller.co^
+||triller.co/promo^
+||parler.com/ads^
+||gettr.com/ads^
+||twitch.tv/ad^
+||ads.twitch.tv^
+||snapkit.com/ads^
+||kwai.com/ads^
+||likeshop.me/ads^
+||hootsuite.com/ads^
+||yubo.live/ads^
+||periscope.tv/ads^
+||mewe.com/ads^
+||truthsocial.com/ads^
+||ads.signal.org^
+||threads.net/sponsored^
+||twitter.com/promoted^
+||facebook.com/sponsored^
+||linkedin.com/sponsored_content^
+||ads.pinterest.co.uk^
+||vk.com/sponsored^
+||ads.reddit.com^
+||ads.medium.com^
+||quora.com/ads^
+||reddit.com/promo^
+||snapchatads.com^
+||substack.com/ads^
+||ads.kwai.com^
+||ads.ok.ru^
+||ads.baidu.com^
+||baidu.com/ad_delivery^
+||renren.com/ads^
+||ads.alibaba.com^
+||ads.163.com^
+||ads.wechat.com^
+||zhihu.com/ads^
+||kik.com/ads^
+||telegram.me/ads^
+||taringa.net/ads^
+||myspace.com/ads^
+||tagged.com/ads^
+||taringa.com/promo^
+||path.com/ads^
+||x.com/ads^
+||threads.net/promo^
+
+! End of Social Media Ads List
+
+/* General Video Ads Block */
+##.video-ad, 
+##.video-ad-container, 
+##.video-ad-banner, 
+##.video-ad-overlay, 
+##.video-ad-slot, 
+##.video-ad-wrapper, 
+##.ad-video-container, 
+##.ad-video-wrapper, 
+##.video-ad-frame {
+    display: none !important;
+}
+
+/* YouTube Video Ads */
+##.ytp-ad-module, 
+##.ytp-ad-player-overlay, 
+##.ytp-ad-text, 
+##.ytp-ad-skip-button, 
+##.ytp-ad-overlay, 
+##.ytp-ad-progress, 
+##.ytp-ad-text-wrapper, 
+##.ytp-ad-player-overlay-instream, 
+##.ytp-ad-player-overlay-skip-button {
+    display: none !important;
+}
+
+/* Twitch Video Ads */
+##.video-ads-container, 
+##.twitch-ad-container, 
+##.twitch-ad-overlay, 
+##.twitch-ad-banner, 
+##.twitch-ad-skip-button, 
+##.twitch-ads-wrapper, 
+##.ads-container-twitch, 
+##.ad-twitch-video, 
+##.ads-twitch-player {
+    display: none !important;
+}
+
+/* Vimeo Ads */
+##.vimeo-ad-overlay, 
+##.vimeo-video-ad, 
+##.vimeo-ad-banner, 
+##.vimeo-ads-container, 
+##.vimeo-ad-wrapper {
+    display: none !important;
+}
+
+/* Facebook Video Ads */
+##.fb-video-ad, 
+##.fb-video-ad-container, 
+##.fb-ad-video-overlay, 
+##.fb-video-ad-banner, 
+##.facebook-video-ad {
+    display: none !important;
+}
+
+/* Dailymotion Video Ads */
+##.dailymotion-ad-container, 
+##.dailymotion-ad-banner, 
+##.dailymotion-ad-overlay, 
+##.dailymotion-video-ad {
+    display: none !important;
+}
+
+/* Hulu Video Ads */
+##.hulu-ad-wrapper, 
+##.hulu-video-ad, 
+##.hulu-ad-overlay, 
+##.hulu-ad-container, 
+##.hulu-ads-banner {
+    display: none !important;
+}
+
+/* Netflix Ads (for promotional ads) */
+##.netflix-ad-container, 
+##.netflix-ad-overlay, 
+##.netflix-video-ad, 
+##.netflix-promo-ad {
+    display: none !important;
+}
+
+/* TikTok Video Ads */
+##.tiktok-ad-container, 
+##.tiktok-ad-overlay, 
+##.tiktok-ad-banner, 
+##.tiktok-video-ad, 
+##.ad-tiktok-video {
+    display: none !important;
+}
+
+/* YouTube Pre-Roll Ads */
+##.ytp-ad-playscreen, 
+##.ytp-ad-skip-button, 
+##.ytp-ad-player-overlay, 
+##.ytp-ad-player-overlay-skip-button, 
+##.ytp-ad-player-overlay-skip-button-wrapper, 
+##.ytp-ad-progress-bar {
+    display: none !important;
+}
+
+/* Video Streaming Pop-up Ads */
+##.stream-video-ad-popup, 
+##.stream-video-ad-overlay, 
+##.streaming-ad-container, 
+##.stream-video-ad-banner {
+    display: none !important;
+}
+
+/* Ads in Picture-in-Picture (PiP) Video Players */
+##.pip-ad-container, 
+##.pip-video-ad, 
+##.pip-ad-overlay {
+    display: none !important;
+}
+
+/* Skip Button Ads in Video Platforms */
+##.skip-ad-btn, 
+##.skip-ads-btn, 
+##.video-ad-skip-button, 
+##.ad-skip-video-button {
+    display: none !important;
+}
+
+/* Instagram Video Ads */
+##.instagram-ad, 
+##.instagram-video-ad, 
+##.instagram-ad-banner, 
+##.instagram-video-ad-overlay {
+    display: none !important;
+}
+
+/* General Video Ad Skipping (for various platforms) */
+##.ad-skip, 
+##.ad-skip-button, 
+##.video-skip-button, 
+##.ad-skip-overlay, 
+##.ad-skip-banner {
+    display: none !important;
+}
+
+/* Ads in Video Players (General Streaming Services) */
+##.video-player-ad-container, 
+##.video-player-ad-banner, 
+##.ad-video-player-overlay, 
+##.ad-streaming-video, 
+##.ad-container-video-player {
+    display: none !important;
+}
+
+/* Ads in Video Streaming Apps */
+##.streaming-video-ad, 
+##.video-streaming-ad-container, 
+##.streaming-ad-video-player, 
+##.video-ad-banner-streaming {
+    display: none !important;
+}
+
+/* Ads in Free Streaming Services */
+##.free-streaming-ad, 
+##.free-ad-stream, 
+##.ad-streaming-video, 
+##.ad-free-streaming-banner {
+    display: none !important;
+}
+
+! --------------------------------
+! Video Ads (YouTube, Twitch, etc.)
+! --------------------------------
+||youtube.com/get_midroll^
+||youtube.com/api/stats/ads^
+||youtube.com/pagead^
+||youtube.com/watchtime^
+||yt3.ggpht.com/ads^
+||ytstatic.l.google.com/ads^
+||twitch.tv/ad^
+||ads.twitch.tv^
+||twitch.tv/videos/ads^
+||vimeo.com/ads^
+||dailymotion.com/ads^
+||hotstar.com/ads^
+||ads.hotstar.com^
+||hulu.com/ads^
+||huluim.com/ads^
+||hbo.com/ads^
+||disneyplus.com/ads^
+||primevideo.com/ads^
+||crunchyroll.com/ads^
+||ads.crunchyroll.com^
+||funimation.com/ads^
+||peacocktv.com/ads^
+||ads.peacocktv.com^
+||paramountplus.com/ads^
+||starz.com/ads^
+||showtime.com/ads^
+||imdb.com/ads^
+||imdbtv.com/ads^
+||roku.com/ads^
+||pluto.tv/ads^
+||tubi.tv/ads^
+||ads.tubi.tv^
+||sling.com/ads^
+||slingtv.com/ads^
+||ads.sling.com^
+||popcornflix.com/ads^
+||vudu.com/ads^
+||ads.vudu.com^
+||fubo.tv/ads^
+||ads.fubo.tv^
+||moviesanywhere.com/ads^
+||ytimg.com/ads^
+||v.redd.it/ads^
+||mxplayer.in/ads^
+||z5xglobal.net/ads^
+||zee5.com/ads^
+||ads.zee5.com^
+||voot.com/ads^
+||ads.voot.com^
+||sonyliv.com/ads^
+||ads.sonyliv.com^
+||viu.com/ads^
+||ads.viu.com^
+||hoichoi.tv/ads^
+||altbalaji.com/ads^
+||aha.video/ads^
+||netflix.com/ads^
+||ads.netflix.com^
+||hboasia.com/ads^
+||iflix.com/ads^
+||iwonder.com/ads^
+||viki.com/ads^
+||ads.viki.com^
+||kocowa.com/ads^
+||wavve.com/ads^
+||nbc.com/ads^
+||abc.com/ads^
+||cbs.com/ads^
+||fox.com/ads^
+||tvplus.samsung.com/ads^
+||samsungtvplus.com/ads^
+||lgchannelplus.com/ads^
+||plex.tv/ads^
+||ads.plex.tv^
+||redbull.tv/ads^
+||curiositystream.com/ads^
+||kanopy.com/ads^
+||thecw.com/ads^
+||crackle.com/ads^
+||britbox.com/ads^
+||acorn.tv/ads^
+||ad.aniview.com^
+||kissanime.com/ads^
+||anime-planet.com/ads^
+||animelab.com/ads^
+||9anime.to/ads^
+||gogoanime.pe/ads^
+||animixplay.to/ads^
+||kickassanime.rs/ads^
+||streamable.com/ads^
+||ads.dstv.com^
+||viacomcbs.com/ads^
+||metacafe.com/ads^
+||mp4upload.com/ads^
+||myanimelist.net/ads^
+||dramacool9.io/ads^
+||asiancrush.com/ads^
+||asianwiki.com/ads^
+
+
+! End of Video Ads List
+
+
+! --------------------------------
+! In-App Ads (Extended List)
+! --------------------------------
+||googleadservices.com^
+||googlesyndication.com^
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||app-measurement.com^
+||ads.mopub.com^
+||ads-twitter.com^
+||facebook.com/ads^
+||graph.facebook.com^
+||mobile.facebook.com/ads^
+||adcolony.com^
+||vungle.com^
+||inmobi.com^
+||admob.com^
+||ads.admob.com^
+||googleads.g.doubleclick.net^
+||ads.doubleclick.net^
+||unityads.unity3d.com^
+||ads.mopub.com^
+||mopub.com/ads^
+||ads.flurry.com^
+||flurry.com/ads^
+||flurryads.com^
+||startapp.com/ads^
+||applovin.com/ads^
+||chartboost.com/ads^
+||leadbolt.com/ads^
+||fyber.com/ads^
+||smatoos.com/ads^
+||ad-mediation.tiktok.com^
+||ads.tiktokv.com^
+||supersonicads.com^
+||supersonic.com/ads^
+||ironsrc.com/ads^
+||liverail.com/ads^
+||altrooz.com/ads^
+||mobfox.com/ads^
+||criteo.com/ads^
+||smaato.com/ads^
+||revmob.com/ads^
+||mobvista.com/ads^
+||avocarrot.com/ads^
+||tapjoy.com/ads^
+||chartboost.com^
+||adkernel.com^
+||mediation.unityads.unity3d.com^
+||adjust.com^
+||adjust.io^
+||applift.com/ads^
+||adstir.com^
+||admost.com^
+||crossinstall.com^
+||ogury.com/ads^
+||openx.net/ads^
+||pubnative.net/ads^
+||loopme.com^
+||madvertise.com^
+||medialets.com^
+||mintegral.com^
+||clickky.biz^
+||casalemedia.com^
+||contextweb.com^
+||smartadserver.com^
+||bidmachine.io/ads^
+||spotx.tv^
+||rubiconproject.com^
+||pubmatic.com^
+||exoclick.com/ads^
+||glispa.com/ads^
+||airpush.com^
+||mobpartner.com^
+||inner-active.mobi^
+||cmptch.com^
+||mobileadtrading.com^
+||chartboost.cachefly.net^
+||ads.taps.io^
+||taps.io/ads^
+||popads.net^
+||popcash.net^
+||ogmobi.com/ads^
+||xapads.com/ads^
+||popmyads.com^
+||adxcore.com^
+||adsperium.com^
+||sdk.mobfox.com^
+||adpushup.com^
+||aarki.net^
+||playhaven.com/ads^
+||kiip.me^
+||medibaad.com^
+||loopme.biz/ads^
+||epom.com/ads^
+||taptica.com/ads^
+||admob.android.com^
+||ironsource.mobi/ads^
+||ad-tech.com^
+||adsrv.eacdn.com^
+||cm.g.doubleclick.net^
+||rtbhouse.com/ads^
+||unity3d.ads.network^
+||ads.yieldmo.com^
+||ad-targeter.com^
+||adsupply.com^
+||tapjoyads.com^
+||adjustcontrol.com^
+||adjoe.io^
+||appbrain.com^
+||apptracker.es^
+||adikteev.com/ads^
+||mobidea.com/ads^
+||appnext.com/ads^
+||display.io^
+||adxvalue.com^
+||minimob.com/ads^
+||mobalytics.gg^
+||mediation.vungle.com^
+||airnowplatform.com^
+||mediabrix.com^
+||trialpay.com/ads^
+||flurry.explorads.com^
+||adglare.net^
+||analytics.flurry.com^
+||cache.liverail.com^
+||ad4game.com^
+||ads.gameanalytics.com^
+||trademob.com^
+||ads.adjust.com^
+||ads.nextmedia.com.hk^
+||moloco.com/ads^
+
+! End of In-App Ads List
+
+/* General In-App Ads Blocking */
+##.app-ad, 
+##.in-app-ad-container, 
+##.in-app-banner, 
+##.in-app-ad-overlay, 
+##.in-app-ad-wrapper, 
+##.ad-in-app, 
+##.ad-banner-app, 
+##.ad-slot-app, 
+##.ad-widget-app, 
+##.ad-box-app {
+    display: none !important;
+}
+
+/* Facebook In-App Ads */
+##.fb-in-app-ad, 
+##.fb-app-ad-container, 
+##.fb-in-app-banner, 
+##.fb-in-app-ad-overlay, 
+##.facebook-app-ad {
+    display: none !important;
+}
+
+/* Google AdMob In-App Ads */
+##.admob-ad-container, 
+##.admob-banner, 
+##.admob-ad, 
+##.admob-video-ad, 
+##.google-admob-ad, 
+##.admob-ad-wrapper {
+    display: none !important;
+}
+
+/* Tapjoy In-App Ads */
+##.tapjoy-ad-container, 
+##.tapjoy-ad-banner, 
+##.tapjoy-video-ad, 
+##.tapjoy-overlay-ad, 
+##.tapjoy-ad-wrapper {
+    display: none !important;
+}
+
+/* Unity Ads in Apps */
+##.unity-ad-container, 
+##.unity-video-ad, 
+##.unity-ad-banner, 
+##.unity-ads-wrapper, 
+##.unity-ad-overlay {
+    display: none !important;
+}
+
+/* AdColony In-App Ads */
+##.adcolony-ad-container, 
+##.adcolony-banner-ad, 
+##.adcolony-overlay-ad, 
+##.adcolony-video-ad, 
+##.adcolony-ad-wrapper {
+    display: none !important;
+}
+
+/* Chartboost In-App Ads */
+##.chartboost-ad-container, 
+##.chartboost-banner-ad, 
+##.chartboost-overlay-ad, 
+##.chartboost-video-ad, 
+##.chartboost-ad-wrapper {
+    display: none !important;
+}
+
+/* Vungle In-App Ads */
+##.vungle-ad-container, 
+##.vungle-banner-ad, 
+##.vungle-overlay-ad, 
+##.vungle-video-ad, 
+##.vungle-ad-wrapper {
+    display: none !important;
+}
+
+/* IronSource In-App Ads */
+##.ironsource-ad-container, 
+##.ironsource-banner-ad, 
+##.ironsource-overlay-ad, 
+##.ironsource-video-ad, 
+##.ironsource-ad-wrapper {
+    display: none !important;
+}
+
+/* AdMob Native In-App Ads */
+##.admob-native-ad-container, 
+##.admob-native-ad, 
+##.admob-native-banner, 
+##.google-admob-native-ad, 
+##.admob-native-ad-wrapper {
+    display: none !important;
+}
+
+/* In-App Ad Popup or Interstitial Ads */
+##.app-ad-popup, 
+##.in-app-ad-popup, 
+##.app-interstitial-ad, 
+##.in-app-interstitial-ad, 
+##.popup-ad-wrapper, 
+##.popup-ad-container, 
+##.interstitial-ad-wrapper {
+    display: none !important;
+}
+
+/* Ad Networks in Apps */
+##.ad-network-app, 
+##.ad-network-wrapper, 
+##.ad-network-banner, 
+##.ad-network-ad-slot, 
+##.ad-network-overlay, 
+##.ad-network-ad-container {
+    display: none !important;
+}
+
+/* AdBuddiz In-App Ads */
+##.adbuddiz-ad-container, 
+##.adbuddiz-banner-ad, 
+##.adbuddiz-overlay-ad, 
+##.adbuddiz-video-ad, 
+##.adbuddiz-ad-wrapper {
+    display: none !important;
+}
+
+/* Facebook Audience Network Ads */
+##.fan-ad-container, 
+##.fan-banner-ad, 
+##.fan-overlay-ad, 
+##.fan-ad-wrapper, 
+##.facebook-audience-ad {
+    display: none !important;
+}
+
+/* Mobvista In-App Ads */
+##.mobvista-ad-container, 
+##.mobvista-banner-ad, 
+##.mobvista-video-ad, 
+##.mobvista-ad-overlay, 
+##.mobvista-ad-wrapper {
+    display: none !important;
+}
+
+/* Amazon In-App Ads */
+##.amazon-ad-container, 
+##.amazon-banner-ad, 
+##.amazon-video-ad, 
+##.amazon-ad-overlay, 
+##.amazon-ad-wrapper {
+    display: none !important;
+}
+
+/* Free Apps In-App Ads (Generic) */
+##.free-app-ad, 
+##.free-app-banner-ad, 
+##.free-app-interstitial-ad, 
+##.free-app-video-ad, 
+##.free-app-ad-overlay {
+    display: none !important;
+}
+
+/* Push Notification Ads in Apps */
+##.push-ad-container, 
+##.push-notification-ad, 
+##.push-ad-overlay, 
+##.push-ad-wrapper {
+    display: none !important;
+}
+
+
+! --------------------------------
+! Trackers and Analytics Block List
+! --------------------------------
+||google-analytics.com^
+||analytics.google.com^
+||ssl.google-analytics.com^
+||www.google-analytics.com^
+||googletagmanager.com^
+||googletagservices.com^
+||gtag.js^
+||ads.google.com^
+||pagead2.googlesyndication.com^
+||doubleclick.net^
+||facebook.com/tr^
+||connect.facebook.net^
+||analytics.tiktok.com^
+||pixel.tiktok.com^
+||analytics.snapchat.com^
+||graph.instagram.com^
+||ads.linkedin.com^
+||px.ads.linkedin.com^
+||bat.bing.com^
+||analytics.yahoo.com^
+||webtrends.com^
+||optimizely.com^
+||quantcast.com^
+||stats.wordpress.com^
+||newrelic.com^
+||mixpanel.com^
+||hotjar.com^
+||fullstory.com^
+||segment.com^
+||heap.io^
+||kissmetrics.com^
+||crazyegg.com^
+||getclicky.com^
+||matomo.org^
+||omniture.com^
+||adobeanalytics.com^
+||akamaihd.net^
+||trackjs.com^
+||logrocket.com^
+||datadoghq.com^
+||pingdom.com^
+||statcounter.com^
+||pardot.com^
+||marketo.com^
+||hubspot.com^
+||brightcove.com^
+||yottaa.net^
+||scorecardresearch.com^
+||adform.net^
+||chartbeat.com^
+||bluekai.com^
+||doubleverify.com^
+||beacon.krxd.net^
+||taboola.com^
+||outbrain.com^
+||track.adform.net^
+||analytics.twitter.com^
+||ads-twitter.com^
+||sp.analytics.yahoo.com^
+||flurry.com^
+||analytics.flurry.com^
+||app-measurement.com^
+||moatads.com^
+||moat.com^
+||mediamath.com^
+||turn.com^
+||chango.com^
+||drawbridge.com^
+||adsrvr.org^
+||liveintent.com^
+||liveramp.com^
+||exelate.com^
+||eyeota.com^
+||zqtk.net^
+||ping.chartbeat.net^
+||scorecardresearch.com^
+||tealiumiq.com^
+||evidon.com^
+||gigya.com^
+||consensu.org^
+||cloudfront.net/track^
+||cdn.segment.com^
+||analytics.pinterest.com^
+||track.pinterest.com^
+||wa.me/track^
+||action.media.net^
+||aniview.com/track^
+||bidr.io^
+||adsymptotic.com^
+||nexac.com^
+||ipredictive.com^
+||tracking.pro^
+||tracking.klickthru.com^
+||c.go-mpulse.net^
+||adsrvr.adkernel.com^
+||logx.optimizely.com^
+||cdn.matomo.cloud^
+||fp.measure.office.com^
+||ml314.com^
+||intercom.io^
+||zoho.com/tracker^
+||zendesk.com/tracker^
+||salesforce.com/tracker^
+||brightedge.com^
+||clarity.microsoft.com^
+||clarity.ms^
+||smartlook.com^
+||linkedin.com/px^
+||beacons.gcp.gvt2.com^
+||adservice.google.co.in^
+||adservice.google.com.hk^
+||secure-us.imrworldwide.com^
+||cdn.heapanalytics.com^
+||cdn.segment.com/analytics.js^
+||tags.tiqcdn.com^
+||adobedtm.com^
+||trackcmp.net^
+||tracking.retargeter.com^
+||analytics.mobile.yahoo.com^
+||cdn.shopify.com/track^
+||ads.pulsepoint.com^
+||track.eroadvertising.com^
+||bidswitch.net/track^
+||dc.optimahub.com^
+||cdn.inspectlet.com^
+||log.optimizely.com^
+||track.xg4ken.com^
+||trackcmp.com^
+||trk.successfactors.com^
+||pixel.advertising.com^
+||p.adsymptotic.com^
+||trk.tealiumiq.com^
+||track.hubspot.com^
+||tracking.facebook.com^
+||track.postaffiliatepro.com^
+||track.searchiq.com^
+||tracker.marinsm.com^
+||track-ad.net^
+||trackmytarget.com^
+||track.fiverr.com^
+||g.doubleclick.net/pagead/track^
+||track.affhub.com^
+||app.adjust.com^
+||analytics.adjust.com^
+||analytics.twitter.com^
+||track.revenuehits.com^
+||openx.net/track^
+
+! End of Trackers and Analytics List
+
+/* General Tracking Scripts */
+##.tracker, 
+##.analytics, 
+##.tracking, 
+##.tracking-pixel, 
+##.analytics-wrapper, 
+##.analytics-container, 
+##.pixel-tracking, 
+##.tracking-ad, 
+##.tracker-element {
+    display: none !important;
+}
+
+/* Google Analytics Tracking */
+##.google-analytics-tracker, 
+##.gtag, 
+##.google-analytics-container, 
+##.google-analytics-pixel {
+    display: none !important;
+}
+
+/* Facebook Pixel Tracking */
+##.fb-pixel, 
+##.facebook-pixel, 
+##.fb-pixel-tracker, 
+##.facebook-pixel-wrapper, 
+##.fb-pixel-overlay {
+    display: none !important;
+}
+
+/* Hotjar Analytics */
+##.hotjar-tracker, 
+##.hotjar-analytics, 
+##.hotjar-container, 
+##.hotjar-overlay {
+    display: none !important;
+}
+
+/* Mixpanel Analytics */
+##.mixpanel-tracker, 
+##.mixpanel-container, 
+##.mixpanel-pixel, 
+##.mixpanel-overlay {
+    display: none !important;
+}
+
+/* Adobe Analytics */
+##.adobe-analytics, 
+##.adobe-analytics-container, 
+##.adobe-pixel, 
+##.adobe-analytics-wrapper {
+    display: none !important;
+}
+
+/* Segment Analytics */
+##.segment-tracker, 
+##.segment-analytics, 
+##.segment-pixel, 
+##.segment-wrapper {
+    display: none !important;
+}
+
+/* Piwik Analytics */
+##.piwik-analytics, 
+##.piwik-tracker, 
+##.piwik-pixel, 
+##.piwik-wrapper {
+    display: none !important;
+}
+
+/* Google Tag Manager */
+##.google-tag-manager, 
+##.gtm-container, 
+##.gtm-pixel, 
+##.gtm-wrapper {
+    display: none !important;
+}
+
+/* Heap Analytics */
+##.heap-analytics, 
+##.heap-tracker, 
+##.heap-wrapper, 
+##.heap-pixel {
+    display: none !important;
+}
+
+/* DoubleClick (Google) Ad Tracking */
+##.doubleclick-tracker, 
+##.doubleclick-analytics, 
+##.doubleclick-ad, 
+##.doubleclick-pixel {
+    display: none !important;
+}
+
+/* Snowplow Analytics */
+##.snowplow-tracker, 
+##.snowplow-analytics, 
+##.snowplow-wrapper {
+    display: none !important;
+}
+
+/* Quantcast Tracking */
+##.quantcast-tracker, 
+##.quantcast-pixel, 
+##.quantcast-wrapper, 
+##.quantcast-analytics {
+    display: none !important;
+}
+
+/* Nielsen Digital Tracking */
+##.nielsen-tracker, 
+##.nielsen-analytics, 
+##.nielsen-pixel, 
+##.nielsen-wrapper {
+    display: none !important;
+}
+
+/* Crazy Egg Analytics */
+##.crazy-egg-tracker, 
+##.crazy-egg-analytics, 
+##.crazy-egg-pixel, 
+##.crazy-egg-wrapper {
+    display: none !important;
+}
+
+/* Kissmetrics Analytics */
+##.kissmetrics-tracker, 
+##.kissmetrics-analytics, 
+##.kissmetrics-pixel, 
+##.kissmetrics-wrapper {
+    display: none !important;
+}
+
+/* Google Optimize */
+##.google-optimize, 
+##.optimize-container, 
+##.optimize-pixel, 
+##.optimize-wrapper {
+    display: none !important;
+}
+
+/* Yandex Metrica */
+##.yandex-metrica, 
+##.yandex-tracker, 
+##.yandex-analytics, 
+##.yandex-pixel {
+    display: none !important;
+}
+
+/* Sentry Analytics */
+##.sentry-tracker, 
+##.sentry-analytics, 
+##.sentry-wrapper, 
+##.sentry-pixel {
+    display: none !important;
+}
+
+/* AdForm Analytics */
+##.adform-tracker, 
+##.adform-analytics, 
+##.adform-pixel, 
+##.adform-wrapper {
+    display: none !important;
+}
+
+/* Cloudflare Web Analytics */
+##.cloudflare-analytics, 
+##.cloudflare-tracker, 
+##.cloudflare-pixel, 
+##.cloudflare-wrapper {
+    display: none !important;
+}
+
+/* Cookie Tracking */
+##.cookie-banner, 
+##.cookie-notice, 
+##.cookie-policy, 
+##.cookie-tracker, 
+##.cookie-consent {
+    display: none !important;
+}
+
+/* General Script Trackers */
+##.tracker-script, 
+##.tracking-script, 
+##.script-tracker, 
+##.script-wrapper, 
+##.js-tracker, 
+##.js-analytics {
+    display: none !important;
+}
+
+/* Data Collection Scripts */
+##.data-collector, 
+##.data-collection, 
+##.data-gathering, 
+##.data-tracker {
+    display: none !important;
+}
+
+/* Embedded Tracking Pixels */
+##.tracking-pixel, 
+##.pixel-tracker, 
+##.img-tracker, 
+##.image-pixel {
+    display: none !important;
+}
+
+
+! --------------------------------
+! E-Commerce Tracking Block List
+! --------------------------------
+||amazon-adsystem.com^
+||amazon.com/track^
+||adservice.amazon.com^
+||advertising.amazon.com^
+||analytics.walmart.com^
+||ads.walmart.com^
+||affiliates.ebay.com^
+||tracking.ebay.com^
+||pixel.klaviyo.com^
+||tracking.shopify.com^
+||track.shopifycdn.com^
+||cdn.shopify.com/track^
+||listrak.com/track^
+||affiliates.bestbuy.com^
+||track.aliexpress.com^
+||alibaba.com/track^
+||rakuten.com/track^
+||cj.com^
+||track.cj.com^
+||adtrack.cj.com^
+||impactradius.com^
+||partnerize.com^
+||prf.hn^
+||awin1.com^
+||linksynergy.com^
+||affiliatewindow.com^
+||pepperjam.com^
+||viglink.com^
+||skimlinks.com^
+||rewardstyle.com^
+||adtriba.com^
+||tracking.bol.com^
+||tracking.zalando.com^
+||tracking.wish.com^
+||wish.com/track^
+||etsy.com/track^
+||ads.etsy.com^
+||track.carrefour.com^
+||coupang.com/track^
+||newegg.com/track^
+||cdn.tracking.shopee.sg^
+||tracking.shopee.sg^
+||cdn.shopee.com/track^
+||cdn.tracking.jd.com^
+||ads.jd.com^
+||tracking.lazada.com^
+||ads.lazada.com^
+||cdn.zalando.net/track^
+||tracking.overstock.com^
+||overstock.com/track^
+||allegro.pl/track^
+||tracking.target.com^
+||adservices.target.com^
+||homedepot.com/track^
+||tracking.kohls.com^
+||tracking.macys.com^
+||ads.nordstrom.com^
+||ads.sephora.com^
+||adtrack.sephora.com^
+||ads.wayfair.com^
+||tracking.wayfair.com^
+||tracking.chewy.com^
+||ads.chewy.com^
+||pixel.bhphotovideo.com^
+||bhphotovideo.com/track^
+||tracking.costco.com^
+||costco.com/track^
+||samsclub.com/track^
+||tracking.ulta.com^
+||ulta.com/track^
+||tracking.ikea.com^
+||ikea.com/track^
+||track.wholesaleclub.com^
+||track.bjs.com^
+||tracking.staples.com^
+||ads.staples.com^
+||pix.adroll.com^
+||tracking.adroll.com^
+||retargeter.com/track^
+||recras.com/track^
+||retailmenot.com/track^
+||tracking.flipkart.com^
+||flipkart.com/track^
+||snapdeal.com/track^
+||tracking.bigbasket.com^
+||myntra.com/track^
+||tracking.snapdeal.com^
+||jabong.com/track^
+||track.paytm.com^
+||meesho.com/track^
+||reliancedigital.in/track^
+||tracking.tokopedia.com^
+||tokopedia.com/track^
+||blibli.com/track^
+||tracking.instacart.com^
+||ads.instacart.com^
+||tracking.doordash.com^
+||ads.doordash.com^
+||tracking.grubhub.com^
+||ads.grubhub.com^
+||ubereats.com/track^
+||deliveryhero.com/track^
+||tracking.swiggy.com^
+||swiggy.com/track^
+||ads.foodpanda.com^
+||foodpanda.com/track^
+||shopback.com/track^
+||tracking.shopback.com^
+||tracking.quidco.com^
+||affiliate.fiverr.com^
+||tracking.fiverr.com^
+||track.upwork.com^
+||affiliate.upwork.com^
+||tracking.airbnb.com^
+||ads.airbnb.com^
+||tracking.booking.com^
+||ads.booking.com^
+||tracking.hotels.com^
+||ads.hotels.com^
+||pixel.expedia.com^
+||tracking.expedia.com^
+||ads.expedia.com^
+||orbitz.com/track^
+||travelocity.com/track^
+||tripadvisor.com/track^
+||ads.tripadvisor.com^
+||hotwire.com/track^
+||viator.com/track^
+||ads.viator.com^
+||ad.affinity.com^
+||tracking.ubereats.com^
+||ubereats.com/track^
+||zomato.com/track^
+||tracking.zomato.com^
+
+! End of E-Commerce Tracking List
+
+/* E-Commerce Tracking Elements */
+
+/* Shopify Tracking */
+##.shopify-tracker, 
+##.shopify-analytics, 
+##.shopify-container, 
+##.shopify-pixel, 
+##.shopify-checkout-tracker {
+    display: none !important;
+}
+
+/* WooCommerce Tracking */
+##.woocommerce-tracker, 
+##.woocommerce-pixel, 
+##.woocommerce-analytics, 
+##.woocommerce-cart-tracker, 
+##.woocommerce-purchase-tracker {
+    display: none !important;
+}
+
+/* Magento Tracking */
+##.magento-tracker, 
+##.magento-pixel, 
+##.magento-analytics, 
+##.magento-cart-tracker {
+    display: none !important;
+}
+
+/* BigCommerce Tracking */
+##.bigcommerce-tracker, 
+##.bigcommerce-pixel, 
+##.bigcommerce-analytics, 
+##.bigcommerce-cart-tracker {
+    display: none !important;
+}
+
+/* PrestaShop Tracking */
+##.prestashop-tracker, 
+##.prestashop-pixel, 
+##.prestashop-analytics, 
+##.prestashop-checkout-tracker {
+    display: none !important;
+}
+
+/* WooCommerce Conversion Tracking */
+##.woo-conversion-tracker, 
+##.woo-order-tracker, 
+##.woo-checkout-pixel {
+    display: none !important;
+}
+
+/* Google Ecommerce Tracking (via Google Analytics) */
+##.google-ecommerce-tracker, 
+##.google-ecommerce-pixel, 
+##.google-ecommerce-container, 
+##.google-ecommerce-wrapper {
+    display: none !important;
+}
+
+/* Facebook Pixel Ecommerce Tracking */
+##.fb-pixel-tracker, 
+##.facebook-ecommerce-pixel, 
+##.fb-pixel-purchase, 
+##.facebook-ecommerce-wrapper {
+    display: none !important;
+}
+
+/* AdRoll E-Commerce Tracking */
+##.adroll-ecommerce, 
+##.adroll-pixel, 
+##.adroll-tracker, 
+##.adroll-analytics {
+    display: none !important;
+}
+
+/* Klaviyo E-Commerce Tracking */
+##.klaviyo-tracker, 
+##.klaviyo-pixel, 
+##.klaviyo-ecommerce {
+    display: none !important;
+}
+
+/* TapClicks E-Commerce Tracking */
+##.tapclicks-tracker, 
+##.tapclicks-pixel, 
+##.tapclicks-analytics {
+    display: none !important;
+}
+
+/* SalesForce E-Commerce Tracking */
+##.salesforce-tracker, 
+##.salesforce-pixel, 
+##.salesforce-analytics {
+    display: none !important;
+}
+
+/* Amazon Affiliate Tracking */
+##.amazon-affiliate-tracker, 
+##.amazon-affiliate-pixel, 
+##.amazon-affiliate-container {
+    display: none !important;
+}
+
+/* Rakuten Affiliate Tracking */
+##.rakuten-affiliate-tracker, 
+##.rakuten-affiliate-pixel, 
+##.rakuten-affiliate-container {
+    display: none !important;
+}
+
+/* CJ Affiliate (Commission Junction) Tracking */
+##.cj-affiliate-tracker, 
+##.cj-affiliate-pixel, 
+##.cj-affiliate-container {
+    display: none !important;
+}
+
+/* ShareASale Tracking */
+##.shareasale-tracker, 
+##.shareasale-pixel, 
+##.shareasale-container {
+    display: none !important;
+}
+
+/* Pepperjam Tracking */
+##.pepperjam-tracker, 
+##.pepperjam-pixel, 
+##.pepperjam-container {
+    display: none !important;
+}
+
+/* Partnerize Tracking */
+##.partnerize-tracker, 
+##.partnerize-pixel, 
+##.partnerize-container {
+    display: none !important;
+}
+
+/* Skimlinks Tracking */
+##.skimlinks-tracker, 
+##.skimlinks-pixel, 
+##.skimlinks-container {
+    display: none !important;
+}
+
+/* Affilinet Tracking */
+##.affilinet-tracker, 
+##.affilinet-pixel, 
+##.affilinet-container {
+    display: none !important;
+}
+
+/* Awin Tracking */
+##.awin-tracker, 
+##.awin-pixel, 
+##.awin-container {
+    display: none !important;
+}
+
+/* eBay Affiliate Tracking */
+##.ebay-affiliate-tracker, 
+##.ebay-affiliate-pixel, 
+##.ebay-affiliate-container {
+    display: none !important;
+}
+
+/* Google Merchant Center Tracking */
+##.google-merchant-tracker, 
+##.google-merchant-pixel, 
+##.google-merchant-container {
+    display: none !important;
+}
+
+/* Ecommerce Analytics Scripts */
+##.ecommerce-analytics-script, 
+##.ecommerce-tracking-script, 
+##.ecommerce-pixel-script, 
+##.ecommerce-tracking-code {
+    display: none !important;
+}
+
+/* Cart Recovery Tracking */
+##.cart-recovery-tracker, 
+##.cart-abandonment-tracker, 
+##.cart-recovery-pixel {
+    display: none !important;
+}
+
+/* Payment Gateway Analytics */
+##.payment-gateway-tracker, 
+##.payment-gateway-pixel, 
+##.payment-gateway-analytics {
+    display: none !important;
+}
+
+/* Customer Segmentation Tracking */
+##.customer-segmentation-tracker, 
+##.customer-segmentation-pixel, 
+##.customer-segmentation-wrapper {
+    display: none !important;
+}
+
+
+! --------------------------------
+! News Site Ads Block List
+! --------------------------------
+||cnn.com/ads^
+||edition.cnn.com/ads^
+||foxnews.com/ads^
+||ads.nbcnews.com^
+||nytimes.com/ads^
+||static01.nyt.com/ads^
+||washingtonpost.com/ads^
+||tracking.washingtonpost.com^
+||ads.guardian.co.uk^
+||guardian.com/ads^
+||bbc.co.uk/ads^
+||ads.bbc.com^
+||ads.bbc.co.uk^
+||forbes.com/ads^
+||ads.forbes.com^
+||wsj.com/ads^
+||ads.wsj.com^
+||economist.com/ads^
+||ads.economist.com^
+||bloomberg.com/ads^
+||ads.bloomberg.com^
+||reuters.com/ads^
+||ads.reutersmedia.net^
+||usatoday.com/ads^
+||ads.gannett-cdn.com^
+||independent.co.uk/ads^
+||telegraph.co.uk/ads^
+||ads.telegraph.co.uk^
+||ft.com/ads^
+||ads.ft.com^
+||timesofindia.indiatimes.com/ads^
+||indiatimes.com/ads^
+||ads.hindustantimes.com^
+||hindustantimes.com/ads^
+||ndtv.com/ads^
+||ads.ndtv.com^
+||scroll.in/ads^
+||ads.scroll.in^
+||thehindu.com/ads^
+||ads.thehindu.com^
+||ads.dailymail.co.uk^
+||dailymail.co.uk/ads^
+||mirror.co.uk/ads^
+||ads.mirror.co.uk^
+||metro.co.uk/ads^
+||ads.metro.co.uk^
+||sun.co.uk/ads^
+||ads.thesun.co.uk^
+||abcnews.com/ads^
+||ads.abcnews.com^
+||cbsnews.com/ads^
+||ads.cbsnews.com^
+||nbcnews.com/ads^
+||ads.nbcnews.com^
+||latimes.com/ads^
+||ads.latimes.com^
+||chicagotribune.com/ads^
+||ads.chicagotribune.com^
+||washingtontimes.com/ads^
+||ads.washingtontimes.com^
+||newsweek.com/ads^
+||ads.newsweek.com^
+||theatlantic.com/ads^
+||ads.theatlantic.com^
+||buzzfeed.com/ads^
+||ads.buzzfeed.com^
+||vox.com/ads^
+||ads.vox.com^
+||vice.com/ads^
+||ads.vice.com^
+||politico.com/ads^
+||ads.politico.com^
+||axios.com/ads^
+||ads.axios.com^
+||slate.com/ads^
+||ads.slate.com^
+||ads.aljazeera.com^
+||aljazeera.com/ads^
+||cnbc.com/ads^
+||ads.cnbc.com^
+||msnbc.com/ads^
+||ads.msnbc.com^
+||fortune.com/ads^
+||ads.fortune.com^
+||ads.npr.org^
+||npr.org/ads^
+||ads.voanews.com^
+||voanews.com/ads^
+||pbs.org/ads^
+||ads.pbs.org^
+||globalnews.ca/ads^
+||ads.globalnews.ca^
+||cbc.ca/ads^
+||ads.cbc.ca^
+||abc.net.au/ads^
+||ads.abc.net.au^
+||smh.com.au/ads^
+||ads.smh.com.au^
+||news.com.au/ads^
+||ads.news.com.au^
+||heraldsun.com.au/ads^
+||ads.heraldsun.com.au^
+||theage.com.au/ads^
+||ads.theage.com.au^
+||televisa.com/ads^
+||ads.televisa.com^
+||ads.elpais.com^
+||elpais.com/ads^
+||ads.marca.com^
+||marca.com/ads^
+||lemonde.fr/ads^
+||ads.lemonde.fr^
+||spiegel.de/ads^
+||ads.spiegel.de^
+||zeit.de/ads^
+||ads.zeit.de^
+||ads.corriere.it^
+||corriere.it/ads^
+||eluniversal.com.mx/ads^
+||ads.eluniversal.com.mx^
+||clarin.com/ads^
+||ads.clarin.com^
+||ads.folha.uol.com.br^
+||ads.uol.com.br^
+||oglobo.globo.com/ads^
+||ads.globo.com^
+||ads.asiatimes.com^
+||asiatimes.com/ads^
+||ads.scmp.com^
+||scmp.com/ads^
+||straitstimes.com/ads^
+||ads.straitstimes.com^
+||jakartapost.com/ads^
+||ads.jakartapost.com^
+
+! End of News Site Ads Block List
+
+
+/* News Sites Ads */
+
+/* General News Ad Containers */
+##.news-ad-container, 
+##.news-ad-banner, 
+##.news-sponsor, 
+##.news-ad-slot, 
+##.news-ads, 
+##.sponsored-content, 
+##.ad-banner-news, 
+##.article-ad, 
+##.news-ad, 
+##.news-promoted {
+    display: none !important;
+}
+
+/* News Pop-up Ads */
+##.news-popup-ad, 
+##.popup-ad, 
+##.news-overlay-ad, 
+##.article-popup-ad, 
+##.news-popup-banner {
+    display: none !important;
+}
+
+/* Native Ads in News */
+##.news-native-ad, 
+##.native-ad-news, 
+##.native-ad-container, 
+##.news-native-ads, 
+##.news-promoted-content {
+    display: none !important;
+}
+
+/* Video Ads on News Websites */
+##.video-ad-news, 
+##.news-video-ad, 
+##.news-video-banner, 
+##.video-ad-container, 
+##.video-ads-wrapper {
+    display: none !important;
+}
+
+/* Sponsored Articles */
+##.sponsored-article, 
+##.sponsored-post-news, 
+##.sponsored-post-container, 
+##.news-sponsored-article {
+    display: none !important;
+}
+
+/* News Notification Ads */
+##.news-ad-notification, 
+##.ad-notification-banner, 
+##.news-push-ad, 
+##.news-push-notification {
+    display: none !important;
+}
+
+/* In-Article Ads */
+##.article-ad-container, 
+##.in-article-ad, 
+##.article-ads, 
+##.inline-news-ad {
+    display: none !important;
+}
+
+/* Mobile News Ads */
+##.mobile-news-ad, 
+##.mobile-ad-news, 
+##.mobile-native-ad-news, 
+##.mobile-article-ad {
+    display: none !important;
+}
+
+/* Sticky Footer Ads */
+##.news-sticky-footer, 
+##.sticky-footer-ad, 
+##.sticky-ad-container, 
+##.sticky-news-ad {
+    display: none !important;
+}
+
+/* Pop-Up Subscription Ads */
+##.subscribe-popup-ad, 
+##.subscribe-overlay-ad, 
+##.subscription-banner-ad, 
+##.popup-subscription-ad {
+    display: none !important;
+}
+
+/* News Letter Subscription Ads */
+##.newsletter-ad, 
+##.newsletter-signup-ad, 
+##.newsletter-subscription-banner {
+    display: none !important;
+}
+
+/* Sponsored News Link Ads */
+##.sponsored-news-link, 
+##.sponsored-news-item, 
+##.news-sponsored-link {
+    display: none !important;
+}
+
+/* Sponsored Social Media Posts in News */
+##.news-social-media-sponsored, 
+##.social-media-sponsored-post, 
+##.news-social-media-ad {
+    display: none !important;
+}
+
+/* News Feed Ads */
+##.news-feed-ad, 
+##.news-feed-ads, 
+##.news-feed-sponsor {
+    display: none !important;
+}
+
+/* News Push Ads */
+##.push-news-ad, 
+##.push-notification-news, 
+##.news-push-ad-wrapper, 
+##.push-notification-ad {
+    display: none !important;
+}
+
+/* Ad Banners in News Articles */
+##.news-banner-ad, 
+##.article-banner-ad, 
+##.article-ad-wrapper, 
+##.news-banner-container {
+    display: none !important;
+}
+
+/* News Interactive Ads */
+##.interactive-ad-news, 
+##.news-interactive-banner, 
+##.news-interactive-ad-container {
+    display: none !important;
+}
+
+/* Ad Containers in News Sites */
+##.ad-container-news, 
+##.ad-wrapper-news, 
+##.news-ad-slot-container, 
+##.news-ad-wrapper {
+    display: none !important;
+}
+
+/* News Site Floating Ads */
+##.floating-ad-news, 
+##.floating-banner-news, 
+##.floating-news-ad-container {
+    display: none !important;
+}
+
+! --------------------------------
+! Gaming Ads Block List
+! --------------------------------
+||ads.gameforge.com^
+||gameforge.com/ads^
+||ads.gameloft.com^
+||gameloft.com/ads^
+||tracking.gameloft.com^
+||ads.supercell.com^
+||supercell.com/ads^
+||tracking.supercell.com^
+||ads.kongregate.com^
+||kongregate.com/ads^
+||ads.r2games.com^
+||r2games.com/ads^
+||ads.trionworlds.com^
+||trionworlds.com/ads^
+||tracking.trionworlds.com^
+||ads.wargaming.net^
+||wargaming.net/ads^
+||tracking.wargaming.net^
+||ads.tencent.com^
+||tencent.com/ads^
+||tracking.tencent.com^
+||ads.riotgames.com^
+||riotgames.com/ads^
+||tracking.riotgames.com^
+||ads.bungie.net^
+||bungie.net/ads^
+||tracking.bungie.net^
+||ads.ea.com^
+||ea.com/ads^
+||tracking.ea.com^
+||ads.blizzard.com^
+||blizzard.com/ads^
+||tracking.blizzard.com^
+||ads.activision.com^
+||activision.com/ads^
+||tracking.activision.com^
+||ads.rockstargames.com^
+||rockstargames.com/ads^
+||tracking.rockstargames.com^
+||ads.ubisoft.com^
+||ubisoft.com/ads^
+||tracking.ubisoft.com^
+||ads.zinga.com^
+||zynga.com/ads^
+||tracking.zynga.com^
+||ads.nexon.com^
+||nexon.com/ads^
+||tracking.nexon.com^
+||ads.yggdrasilgaming.com^
+||yggdrasilgaming.com/ads^
+||tracking.yggdrasilgaming.com^
+||ads.kabam.com^
+||kabam.com/ads^
+||tracking.kabam.com^
+||ads.mygames.com^
+||mygames.com/ads^
+||tracking.mygames.com^
+||ads.neowiz.com^
+||neowiz.com/ads^
+||tracking.neowiz.com^
+||ads.playtika.com^
+||playtika.com/ads^
+||tracking.playtika.com^
+||ads.playrix.com^
+||playrix.com/ads^
+||tracking.playrix.com^
+||ads.scopely.com^
+||scopely.com/ads^
+||tracking.scopely.com^
+||ads.snkplaymore.com^
+||snkplaymore.com/ads^
+||tracking.snkplaymore.com^
+||ads.sonyentertainmentnetwork.com^
+||sonyentertainmentnetwork.com/ads^
+||tracking.sonyentertainmentnetwork.com^
+||ads.gog.com^
+||gog.com/ads^
+||tracking.gog.com^
+||ads.epicgames.com^
+||epicgames.com/ads^
+||tracking.epicgames.com^
+||ads.fortnite.com^
+||fortnite.com/ads^
+||tracking.fortnite.com^
+||ads.nintendo.com^
+||nintendo.com/ads^
+||tracking.nintendo.com^
+||ads.steampowered.com^
+||steampowered.com/ads^
+||tracking.steampowered.com^
+||ads.microsft.com^
+||microsoft.com/ads^
+||tracking.microsoft.com^
+||ads.battle.net^
+||battle.net/ads^
+||tracking.battle.net^
+||ads.twitch.tv^
+||twitch.tv/ads^
+||tracking.twitch.tv^
+||ads.youtube.com^
+||youtube.com/ads^
+||tracking.youtube.com^
+||ads.facebook.com^
+||facebook.com/ads^
+||tracking.facebook.com^
+||ads.instagram.com^
+||instagram.com/ads^
+||tracking.instagram.com^
+||ads.snapchat.com^
+||snapchat.com/ads^
+||tracking.snapchat.com^
+||ads.twitter.com^
+||twitter.com/ads^
+||tracking.twitter.com^
+||ads.linkedin.com^
+||linkedin.com/ads^
+||tracking.linkedin.com^
+||ads.google.com^
+||google.com/ads^
+||tracking.google.com^
+||ads.admob.com^
+||admob.com/ads^
+||tracking.admob.com^
+||ads.chartboost.com^
+||chartboost.com/ads^
+||tracking.chartboost.com^
+||ads.tapjoy.com^
+||tapjoy.com/ads^
+||tracking.tapjoy.com^
+||ads.unity3d.com^
+||unity3d.com/ads^
+||tracking.unity3d.com^
+||ads.fyber.com^
+||fyber.com/ads^
+||tracking.fyber.com^
+||ads.applovin.com^
+||applovin.com/ads^
+||tracking.applovin.com^
+||ads.vungle.com^
+||vungle.com/ads^
+||tracking.vungle.com^
+||ads.adcolony.com^
+||adcolony.com/ads^
+||tracking.adcolony.com^
+||ads.ironSource.com^
+||ironsource.com/ads^
+||tracking.ironsource.com^
+||ads.revmob.com^
+||revmob.com/ads^
+||tracking.revmob.com^
+||ads.chartboost.com^
+||chartboost.com/ads^
+||tracking.chartboost.com^
+||ads.fyber.com^
+||fyber.com/ads^
+||tracking.fyber.com^
+||ads.unity.com^
+||unity.com/ads^
+||tracking.unity.com^
+||ads.admobi.com^
+||admobi.com/ads^
+||tracking.admobi.com^
+
+! End of Gaming Ads Block List
+
+/* Gaming Ads */
+
+/* General Gaming Ad Containers */
+##.gaming-ad-container, 
+##.gaming-ad-banner, 
+##.gaming-sponsor, 
+##.gaming-ad-slot, 
+##.gaming-ads, 
+##.sponsored-content-game, 
+##.ad-banner-game, 
+##.game-ad, 
+##.game-promoted {
+    display: none !important;
+}
+
+/* Pop-up Gaming Ads */
+##.gaming-popup-ad, 
+##.popup-ad-game, 
+##.game-overlay-ad, 
+##.gaming-popup-banner {
+    display: none !important;
+}
+
+/* Native Ads in Gaming */
+##.gaming-native-ad, 
+##.native-ad-game, 
+##.native-ad-container-game, 
+##.gaming-native-ads, 
+##.game-promoted-content {
+    display: none !important;
+}
+
+/* Video Ads in Gaming */
+##.gaming-video-ad, 
+##.game-video-ad, 
+##.gaming-video-banner, 
+##.video-ad-container-game, 
+##.game-video-ads-wrapper {
+    display: none !important;
+}
+
+/* Sponsored Articles and Game Guides */
+##.sponsored-game-article, 
+##.sponsored-game-post, 
+##.gaming-sponsored-post-container, 
+##.game-sponsored-article {
+    display: none !important;
+}
+
+/* Gaming Notification Ads */
+##.gaming-ad-notification, 
+##.game-ad-notification-banner, 
+##.gaming-push-ad, 
+##.game-push-notification {
+    display: none !important;
+}
+
+/* In-Game Ads (Inline) */
+##.in-game-ad-container, 
+##.inline-game-ad, 
+##.game-inline-ads {
+    display: none !important;
+}
+
+/* Mobile Gaming Ads */
+##.mobile-game-ad, 
+##.mobile-ad-game, 
+##.mobile-native-ad-game, 
+##.mobile-game-article-ad {
+    display: none !important;
+}
+
+/* Sticky Footer Gaming Ads */
+##.game-sticky-footer, 
+##.sticky-footer-game-ad, 
+##.sticky-ad-game-container, 
+##.sticky-game-ad {
+    display: none !important;
+}
+
+/* Pop-Up Subscription Gaming Ads */
+##.subscribe-game-popup-ad, 
+##.game-subscribe-overlay-ad, 
+##.gaming-subscription-banner-ad, 
+##.game-popup-subscription-ad {
+    display: none !important;
+}
+
+/* Game Newsletter Subscription Ads */
+##.gaming-newsletter-ad, 
+##.game-newsletter-signup-ad, 
+##.game-newsletter-subscription-banner {
+    display: none !important;
+}
+
+/* Sponsored Game Link Ads */
+##.sponsored-game-link, 
+##.sponsored-game-item, 
+##.game-sponsored-link {
+    display: none !important;
+}
+
+/* Sponsored Social Media Game Posts */
+##.gaming-social-media-sponsored, 
+##.social-media-game-sponsored-post, 
+##.game-social-media-ad {
+    display: none !important;
+}
+
+/* Game Feed Ads */
+##.game-feed-ad, 
+##.gaming-feed-ads, 
+##.game-feed-sponsor {
+    display: none !important;
+}
+
+/* Game Push Notification Ads */
+##.push-game-ad, 
+##.game-push-notification-wrapper, 
+##.gaming-push-ad-container {
+    display: none !important;
+}
+
+/* Gaming Ad Banners */
+##.gaming-banner-ad, 
+##.game-banner-ad, 
+##.game-banner-container, 
+##.gaming-banner-wrapper {
+    display: none !important;
+}
+
+/* Interactive Ads in Gaming */
+##.gaming-interactive-ad, 
+##.game-interactive-banner, 
+##.game-interactive-ad-container {
+    display: none !important;
+}
+
+/* Ad Containers for Game Sites */
+##.game-ad-container, 
+##.game-ad-wrapper, 
+##.game-ad-slot-container, 
+##.game-ad-wrapper-container {
+    display: none !important;
+}
+
+/* Floating Game Ads */
+##.floating-ad-game, 
+##.floating-game-banner, 
+##.floating-game-ad-container {
+    display: none !important;
+}
+
+
+! --------------------------------
+! App Store Ads Block List
+! --------------------------------
+||ads.apple.com^
+||apple.com/ads^
+||tracking.apple.com^
+||ads.google.com^
+||google.com/ads^
+||tracking.google.com^
+||ads.microsoft.com^
+||microsoft.com/ads^
+||tracking.microsoft.com^
+||ads.amazon.com^
+||amazon.com/ads^
+||tracking.amazon.com^
+||ads.msn.com^
+||msn.com/ads^
+||tracking.msn.com^
+||ads.facebook.com^
+||facebook.com/ads^
+||tracking.facebook.com^
+||ads.instagram.com^
+||instagram.com/ads^
+||tracking.instagram.com^
+||ads.snapchat.com^
+||snapchat.com/ads^
+||tracking.snapchat.com^
+||ads.twitter.com^
+||twitter.com/ads^
+||tracking.twitter.com^
+||ads.linkedin.com^
+||linkedin.com/ads^
+||tracking.linkedin.com^
+||ads.tiktok.com^
+||tiktok.com/ads^
+||tracking.tiktok.com^
+||ads.spotify.com^
+||spotify.com/ads^
+||tracking.spotify.com^
+||ads.pinterest.com^
+||pinterest.com/ads^
+||tracking.pinterest.com^
+||ads.snap.com^
+||snap.com/ads^
+||tracking.snap.com^
+||ads.play.google.com^
+||play.google.com/ads^
+||tracking.play.google.com^
+||ads.itunes.apple.com^
+||itunes.apple.com/ads^
+||tracking.itunes.apple.com^
+||ads.steampowered.com^
+||steampowered.com/ads^
+||tracking.steampowered.com^
+||ads.battle.net^
+||battle.net/ads^
+||tracking.battle.net^
+||ads.epicgames.com^
+||epicgames.com/ads^
+||tracking.epicgames.com^
+||ads.iosappstore.com^
+||iosappstore.com/ads^
+||tracking.iosappstore.com^
+||ads.amazon.com/appstore^
+||amazon.com/appstore/ads^
+||tracking.amazon.com/appstore^
+||ads.samsung.com^
+||samsung.com/ads^
+||tracking.samsung.com^
+||ads.huawei.com^
+||huawei.com/ads^
+||tracking.huawei.com^
+||ads.xiaomi.com^
+||xiaomi.com/ads^
+||tracking.xiaomi.com^
+||ads.oppo.com^
+||oppo.com/ads^
+||tracking.oppo.com^
+||ads.vivo.com^
+||vivo.com/ads^
+||tracking.vivo.com^
+||ads.oneplus.com^
+||oneplus.com/ads^
+||tracking.oneplus.com^
+||ads.mi.com^
+||mi.com/ads^
+||tracking.mi.com^
+||ads.realme.com^
+||realme.com/ads^
+||tracking.realme.com^
+||ads.walmart.com^
+||walmart.com/ads^
+||tracking.walmart.com^
+||ads.target.com^
+||target.com/ads^
+||tracking.target.com^
+||ads.bestbuy.com^
+||bestbuy.com/ads^
+||tracking.bestbuy.com^
+||ads.ebay.com^
+||ebay.com/ads^
+||tracking.ebay.com^
+||ads.rakuten.com^
+||rakuten.com/ads^
+||tracking.rakuten.com^
+||ads.shopee.com^
+||shopee.com/ads^
+||tracking.shopee.com^
+||ads.lazada.com^
+||lazada.com/ads^
+||tracking.lazada.com^
+||ads.flipkart.com^
+||flipkart.com/ads^
+||tracking.flipkart.com^
+||ads.jumia.com^
+||jumia.com/ads^
+||tracking.jumia.com^
+||ads.aliexpress.com^
+||aliexpress.com/ads^
+||tracking.aliexpress.com^
+||ads.daraz.com^
+||daraz.com/ads^
+||tracking.daraz.com^
+||ads.shutterstock.com^
+||shutterstock.com/ads^
+||tracking.shutterstock.com^
+||ads.canva.com^
+||canva.com/ads^
+||tracking.canva.com^
+||ads.fiverr.com^
+||fiverr.com/ads^
+||tracking.fiverr.com^
+||ads.upwork.com^
+||upwork.com/ads^
+||tracking.upwork.com^
+||ads.kickstarter.com^
+||kickstarter.com/ads^
+||tracking.kickstarter.com^
+||ads.indiegogo.com^
+||indiegogo.com/ads^
+||tracking.indiegogo.com^
+||ads.shopify.com^
+||shopify.com/ads^
+||tracking.shopify.com^
+||ads.wix.com^
+||wix.com/ads^
+||tracking.wix.com^
+||ads.weebly.com^
+||weebly.com/ads^
+||tracking.weebly.com^
+||ads.squarespace.com^
+||squarespace.com/ads^
+||tracking.squarespace.com^
+||ads.etsy.com^
+||etsy.com/ads^
+||tracking.etsy.com^
+||ads.tumblr.com^
+||tumblr.com/ads^
+||tracking.tumblr.com^
+||ads.yelp.com^
+||yelp.com/ads^
+||tracking.yelp.com^
+||ads.reddit.com^
+||reddit.com/ads^
+||tracking.reddit.com^
+||ads.quora.com^
+||quora.com/ads^
+||tracking.quora.com^
+||ads.slideshare.com^
+||slideshare.com/ads^
+||tracking.slideshare.com^
+||ads.github.com^
+||github.com/ads^
+||tracking.github.com^
+||ads.bit.ly^
+||bit.ly/ads^
+||tracking.bit.ly^
+||ads.paypal.com^
+||paypal.com/ads^
+||tracking.paypal.com^
+||ads.stripe.com^
+||stripe.com/ads^
+||tracking.stripe.com^
+||ads.venmo.com^
+||venmo.com/ads^
+||tracking.venmo.com^
+||ads.square.com^
+||square.com/ads^
+||tracking.square.com^
+||ads.braintreepayments.com^
+||braintreepayments.com/ads^
+||tracking.braintreepayments.com^
+
+! End of App Store Ads Block List
+
+/* App Store Ads */
+
+/* App Store Ad Containers */
+##.app-store-ad-container, 
+##.app-store-ad-banner, 
+##.app-store-sponsor, 
+##.app-store-ad-slot, 
+##.app-store-ads, 
+##.sponsored-app-content, 
+##.app-ad-banner, 
+##.app-promotion-ad, 
+##.app-promoted-content {
+    display: none !important;
+}
+
+/* Pop-up App Store Ads */
+##.app-store-popup-ad, 
+##.popup-ad-app, 
+##.app-store-overlay-ad, 
+##.app-store-popup-banner {
+    display: none !important;
+}
+
+/* Native Ads in App Stores */
+##.app-store-native-ad, 
+##.native-ad-app-store, 
+##.native-ad-container-app, 
+##.app-store-native-ads, 
+##.app-promoted-app {
+    display: none !important;
+}
+
+/* Video Ads in App Stores */
+##.app-store-video-ad, 
+##.app-video-ad, 
+##.app-store-video-banner, 
+##.video-ad-container-app, 
+##.app-video-ads-wrapper {
+    display: none !important;
+}
+
+/* Sponsored App Articles */
+##.sponsored-app-article, 
+##.sponsored-app-post, 
+##.app-sponsored-post-container, 
+##.app-sponsored-article {
+    display: none !important;
+}
+
+/* App Store Notification Ads */
+##.app-store-ad-notification, 
+##.app-notification-banner, 
+##.app-push-ad, 
+##.app-push-notification {
+    display: none !important;
+}
+
+/* In-App Ad Banners */
+##.in-app-ad-container, 
+##.inline-app-ad, 
+##.app-inline-ads {
+    display: none !important;
+}
+
+/* Mobile App Store Ads */
+##.mobile-app-ad, 
+##.mobile-ad-app, 
+##.mobile-native-ad-app, 
+##.mobile-app-article-ad {
+    display: none !important;
+}
+
+/* Sticky Footer App Store Ads */
+##.app-store-sticky-footer, 
+##.sticky-footer-app-ad, 
+##.sticky-ad-app-container, 
+##.sticky-app-ad {
+    display: none !important;
+}
+
+/* Pop-Up App Store Subscription Ads */
+##.subscribe-app-popup-ad, 
+##.app-store-subscribe-overlay-ad, 
+##.app-store-subscription-banner-ad, 
+##.app-popup-subscription-ad {
+    display: none !important;
+}
+
+/* App Store Newsletter Subscription Ads */
+##.app-store-newsletter-ad, 
+##.app-newsletter-signup-ad, 
+##.app-newsletter-subscription-banner {
+    display: none !important;
+}
+
+/* Sponsored App Link Ads */
+##.sponsored-app-link, 
+##.sponsored-app-item, 
+##.app-sponsored-link {
+    display: none !important;
+}
+
+/* Sponsored Social Media App Posts */
+##.app-store-social-media-sponsored, 
+##.social-media-app-sponsored-post, 
+##.app-store-social-media-ad {
+    display: none !important;
+}
+
+/* App Store Feed Ads */
+##.app-store-feed-ad, 
+##.app-store-feed-ads, 
+##.app-feed-sponsor {
+    display: none !important;
+}
+
+/* App Store Push Notification Ads */
+##.push-app-ad, 
+##.app-push-notification-wrapper, 
+##.app-store-push-ad-container {
+    display: none !important;
+}
+
+/* App Store Ad Banners */
+##.app-store-banner-ad, 
+##.app-banner-ad, 
+##.app-banner-container, 
+##.app-banner-wrapper {
+    display: none !important;
+}
+
+/* Interactive Ads in App Store */
+##.app-store-interactive-ad, 
+##.app-interactive-banner, 
+##.app-interactive-ad-container {
+    display: none !important;
+}
+
+/* Ad Containers for App Stores */
+##.app-ad-container-store, 
+##.app-ad-wrapper, 
+##.app-ad-slot-container, 
+##.app-ad-wrapper-container {
+    display: none !important;
+}
+
+/* Floating App Store Ads */
+##.floating-ad-app, 
+##.floating-app-banner, 
+##.floating-app-ad-container {
+    display: none !important;
+}
+
+
+! --------------------------------
+! Hide Ad Placeholders (CSS Rules)
+! --------------------------------
+##.ads
+##.ad-container
+##.ad-banner
+##.sponsored
+##.promoted
+##.advertisement
+##.ad-slot
+##.google-sponsored
+##.native-ad
+##.ad-inline
+/* General Ad Placeholder Hiding */
+##.ads, 
+##.ad-container, 
+##.ad-banner, 
+##.sponsored, 
+##.promoted, 
+##.advertisement, 
+##.ad-slot, 
+##.google-sponsored, 
+##.native-ad, 
+##.ad-inline {
+    display: none !important;
+}
+
+/* Google Ads Specific */
+##.google-ads, 
+##.google-ad, 
+##.adsbygoogle, 
+##.google-adsense {
+    display: none !important;
+}
+
+/* Facebook Sponsored Ads */
+##.fb-sponsored, 
+##.facebook-ad, 
+##.fb-ad-container, 
+##.ads-facebook {
+    display: none !important;
+}
+
+/* YouTube Video Ads */
+##.ytp-ad-module, 
+##.ytp-ad-player-overlay, 
+##.ytp-ad-skip-button, 
+##.video-ads {
+    display: none !important;
+}
+
+/* Hide Ads in News and Magazine Websites */
+##.news-ad, 
+##.article-ad, 
+##.news-banner, 
+##.news-ad-container {
+    display: none !important;
+}
+
+/* Pop-up and Modal Ads */
+##.ad-modal, 
+##.ad-popup, 
+##.modal-ad, 
+##.overlay-ad {
+    display: none !important;
+}
+
+/* E-Commerce/Shopping Ads */
+##.shop-ad, 
+##.promo-ad, 
+##.shopping-ad, 
+##.offer-ad {
+    display: none !important;
+}
+
+/* Social Media Sponsored Posts */
+##.sponsored-post, 
+##.promoted-tweet, 
+##.instagram-ad, 
+##.sponsored-posts {
+    display: none !important;
+}
+
+/* Mobile App Install Ads */
+##.install-ad, 
+##.mobile-ad, 
+##.app-install-ad {
+    display: none !important;
+}
+
+/* Affiliate and Referral Ads */
+##.affiliate-ad, 
+##.referral-ad, 
+##.referral-banner {
+    display: none !important;
+}
+
+/* Hide Ads in Embedded Content or Widgets */
+##.embed-ad, 
+##.embed-ad-container, 
+##.iframe-ad, 
+##.widget-ad {
+    display: none !important;
+}
+
+/* Hide Ads in Gaming Websites or Apps */
+##.game-ad, 
+##.gaming-ad, 
+##.game-ad-container {
+    display: none !important;
+}
+
+/* Pop-up Ads in Forms or Surveys */
+##.survey-ad, 
+##.popup-survey-ad, 
+##.popup-form-ad {
+    display: none !important;
+}
+
+/* Checkout and Cart Page Ads */
+##.cart-ad, 
+##.checkout-ad, 
+##.promo-cart-ad {
+    display: none !important;
+}
+/* General Ad Placeholder Hiding */
+div[id*="ad"], div[class*="ad"], iframe[id*="ad"], iframe[class*="ad"], 
+img[src*="ad"], img[src*="banner"], img[src*="advertisement"], 
+ins[class*="ads"], ins[id*="ads"], 
+section[class*="ad"], section[id*="ad"], 
+span[class*="ad"], span[id*="ad"] {
+    display: none !important;
+}
+
+/* Hide Ads from Specific Networks */
+div[id*="google_ads"], div[class*="google_ads"], iframe[src*="googleads"], 
+ins[class*="adsbygoogle"], ins[id*="adsbygoogle"] {
+    display: none !important;
+}
+
+/* Hide Facebook Ads */
+div[id*="fb-ad"], iframe[src*="facebook.com"], 
+div[class*="fb-ad"] {
+    display: none !important;
+}
+
+/* Hide YouTube Ads */
+div[id*="google_ads"], div[class*="ytp-ad-module"], 
+iframe[src*="youtube.com/ads"] {
+    display: none !important;
+}
+
+/* Hide Ad Elements in News Sites */
+div[class*="article-ad"], div[id*="advertisement"], 
+div[id*="banner-ad"], div[class*="banner-ad"], 
+div[class*="ad-container"] {
+    display: none !important;
+}
+
+/* Hide Pop-ups or Modal Ads */
+div[class*="modal-ad"], div[class*="popup-ad"], 
+div[class*="overlay-ad"], .popup-ad, .ad-popup {
+    display: none !important;
+}
+
+/* Hide App Store or E-Commerce Ads */
+div[class*="appstore-ad"], div[id*="shop-ad"], 
+div[class*="offer-ad"], div[id*="promo-ad"], 
+section[class*="ads"], section[id*="ads"] {
+    display: none !important;
+}
+
+/* Hide Social Media Sponsored Ads */
+div[class*="sponsored"], div[id*="sponsored"], 
+section[class*="sponsored"], section[id*="sponsored"] {
+    display: none !important;
+}
+
+/* Hide Gaming Ads */
+div[class*="game-ad"], div[id*="game-ad"], 
+iframe[src*="game-ad"], ins[class*="game-ad"], 
+section[class*="game-ad"], section[id*="game-ad"] {
+    display: none !important;
+}
+
+/* Hide Mobile App Install Ads */
+div[class*="install-ad"], div[id*="install-ad"], 
+iframe[src*="install-ad"] {
+    display: none !important;
+}
+/* Hide Google Ads */
+div[class*="google_ads"], div[id*="google_ads"], 
+iframe[src*="googleads"], 
+ins[class*="adsbygoogle"], ins[id*="adsbygoogle"],
+span[id*="google_ads"] {
+    display: none !important;
+}
+
+/* Hide Facebook Ads */
+div[class*="fb-ad"], div[id*="fb-ad"], 
+iframe[src*="facebook.com"], 
+div[class*="fb-ad-container"], 
+section[id*="fb-ad-container"] {
+    display: none !important;
+}
+
+/* Hide YouTube Ads */
+div[id*="google_ads"], div[class*="ytp-ad-module"], 
+iframe[src*="youtube.com/ads"], 
+section[class*="ytp-ad"] {
+    display: none !important;
+}
+
+/* Hide Ads in News Sites */
+div[class*="article-ad"], div[id*="advertisement"], 
+div[id*="banner-ad"], div[class*="banner-ad"], 
+div[class*="ad-container"], 
+section[class*="ad-section"], 
+header[class*="ad-header"] {
+    display: none !important;
+}
+
+/* Hide Pop-ups or Modal Ads */
+div[class*="modal-ad"], div[class*="popup-ad"], 
+div[class*="overlay-ad"], .popup-ad, .ad-popup, 
+div[class*="ad-modal"], div[id*="ad-modal"] {
+    display: none !important;
+}
+
+/* Hide App Store or E-Commerce Ads */
+div[class*="appstore-ad"], div[id*="shop-ad"], 
+div[class*="offer-ad"], div[id*="promo-ad"], 
+section[class*="ads"], section[id*="ads"], 
+div[class*="promotion-ad"], div[id*="promotion-ad"] {
+    display: none !important;
+}
+
+/* Hide Social Media Sponsored Ads */
+div[class*="sponsored"], div[id*="sponsored"], 
+section[class*="sponsored"], section[id*="sponsored"], 
+div[class*="ad-sponsored"], div[id*="ad-sponsored"] {
+    display: none !important;
+}
+
+/* Hide Gaming Ads */
+div[class*="game-ad"], div[id*="game-ad"], 
+iframe[src*="game-ad"], ins[class*="game-ad"], 
+section[class*="game-ad"], section[id*="game-ad"], 
+div[class*="ad-game"] {
+    display: none !important;
+}
+
+/* Hide Mobile App Install Ads */
+div[class*="install-ad"], div[id*="install-ad"], 
+iframe[src*="install-ad"], div[class*="mobile-ad-install"] {
+    display: none !important;
+}
+
+/* Hide Affiliate and Referral Ads */
+div[class*="affiliate-ad"], div[id*="affiliate-ad"], 
+iframe[src*="affiliate.com"], 
+section[class*="referral-ad"], div[class*="referral-ad"] {
+    display: none !important;
+}
+
+/* Hide Popup Ads in Forms or Surveys */
+div[class*="popup-form-ad"], div[id*="popup-form-ad"], 
+div[class*="survey-ad"], div[id*="survey-ad"], 
+div[class*="ad-form-popup"] {
+    display: none !important;
+}
+
+/* Hide Ads from Embedded Content */
+div[class*="embed-ad"], div[id*="embed-ad"], 
+iframe[src*="embed-ad"], section[class*="embed-ad"] {
+    display: none !important;
+}
+
+/* Hide Ads in Shopping Carts or Checkout */
+div[class*="checkout-ad"], div[id*="checkout-ad"], 
+section[class*="cart-ad"], section[id*="cart-ad"], 
+div[class*="cart-popup-ad"] {
+    display: none !important;
+}
+
+
+! --------------------------------
+! Pop-Ups and Overlay Ads
+! --------------------------------
+||popupads.com^
+||popunder.net^
+##.popup
+##.overlay-ad
+##.interstitial-ad
+##.modal-ad
+/* General Pop-Up and Overlay Ad Hiding */
+##.popup-ad, 
+##.modal-ad, 
+##.overlay-ad, 
+##.ad-overlay, 
+##.ad-popup, 
+##.popup-container, 
+##.popup-overlay, 
+##.modal-ad-container, 
+##.ad-lightbox, 
+##.ad-popup-modal {
+    display: none !important;
+}
+
+/* Specific Pop-Up Ad Containers */
+##.popup-banner, 
+##.popup-modal, 
+##.popup-overlay-ad, 
+##.ad-popup-box, 
+##.overlay-popup-ad {
+    display: none !important;
+}
+
+/* Close Button for Pop-Up Ads */
+##.close-popup, 
+##.popup-close-btn, 
+##.close-ad-btn, 
+##.ad-close-button, 
+##.ad-modal-close {
+    display: none !important;
+}
+
+/* Pop-Up Ads on Hover or Scroll */
+##.scroll-ad, 
+##.hover-ad, 
+##.hover-popup, 
+##.popup-on-scroll {
+    display: none !important;
+}
+
+/* Exit-Intent Pop-Ups */
+##.exit-intent-popup, 
+##.exit-popup-ad, 
+##.exit-intent-overlay {
+    display: none !important;
+}
+
+/* Ad Overlay on Page Load */
+##.page-load-overlay, 
+##.load-ad-overlay, 
+##.page-load-popup {
+    display: none !important;
+}
+
+/* Full-Screen Pop-Up Ads */
+##.fullscreen-ad, 
+##.fullscreen-popup, 
+##.fullscreen-ad-overlay {
+    display: none !important;
+}
+
+/* Modal Ad with Close Timer */
+##.ad-timer-popup, 
+##.countdown-ad, 
+##.timer-popup-ad, 
+##.ad-countdown-overlay {
+    display: none !important;
+}
+
+/* Subscription or Newsletter Pop-Ups */
+##.newsletter-popup, 
+##.subscribe-popup, 
+##.subscription-ad, 
+##.newsletter-overlay {
+    display: none !important;
+}
+
+/* Floating Pop-Up Ads */
+##.floating-popup-ad, 
+##.floating-ad, 
+##.floating-banner-ad {
+    display: none !important;
+}
+
+/* Pop-Up Ads in Login Forms */
+##.login-popup-ad, 
+##.login-overlay-ad, 
+##.ad-login-popup {
+    display: none !important;
+}
+
+/* Image Overlay Ads */
+##.image-overlay-ad, 
+##.image-ad-overlay, 
+##.ad-overlay-image {
+    display: none !important;
+}
+
+/* Promotional and Survey Pop-Ups */
+##.promo-popup-ad, 
+##.survey-popup-ad, 
+##.survey-overlay-ad {
+    display: none !important;
+}
+
+/* Video Overlay Ads */
+##.video-overlay-ad, 
+##.video-ad-overlay, 
+##.video-popup-ad, 
+##.ad-video-overlay {
+    display: none !important;
+}
+
+
+! --------------------------------
+! Streaming Ads
+! --------------------------------
+||netflix.com/ads^
+||disneyplus.com/ads^
+||hbo.com/ads^
+||primevideo.com/ads^
+||crunchyroll.com/ads^
+||funimation.com/ads^
+/* General Streaming Ad Hiding */
+##.stream-ad, 
+##.streaming-ad, 
+##.ad-video, 
+##.stream-ad-container, 
+##.stream-overlay-ad, 
+##.video-ad-banner, 
+##.ad-stream, 
+##.video-ad-container, 
+##.stream-ad-overlay {
+    display: none !important;
+}
+
+/* Video Ads on Streaming Platforms */
+##.ads-by-stream, 
+##.stream-video-ad, 
+##.video-stream-ad, 
+##.streaming-video-ad, 
+##.streaming-ads-container, 
+##.video-ad-stream {
+    display: none !important;
+}
+
+/* Pre-Roll Video Ads */
+##.pre-roll-ad, 
+##.ad-pre-roll, 
+##.preroll-ad-container, 
+##.pre-roll-banner {
+    display: none !important;
+}
+
+/* Mid-Roll Ads (During the Video) */
+##.mid-roll-ad, 
+##.ad-mid-roll, 
+##.mid-roll-banner, 
+##.mid-roll-video-ad {
+    display: none !important;
+}
+
+/* Post-Roll Video Ads */
+##.post-roll-ad, 
+##.ad-post-roll, 
+##.post-roll-banner, 
+##.post-roll-video-ad {
+    display: none !important;
+}
+
+/* Streaming Platform Ad Skips */
+##.ad-skip-button, 
+##.skip-ad-button, 
+##.skip-ads, 
+##.ad-skip, 
+##.ad-skip-overlay {
+    display: none !important;
+}
+
+/* Picture-in-Picture Ads */
+##.pip-ad, 
+##.pip-video-ad, 
+##.picture-in-picture-ad {
+    display: none !important;
+}
+
+/* In-Stream Banners */
+##.in-stream-ad-banner, 
+##.streaming-ad-banner, 
+##.ad-instream-banner {
+    display: none !important;
+}
+
+/* Ads in Live Streams */
+##.live-stream-ad, 
+##.live-stream-ads, 
+##.ad-live-stream, 
+##.live-video-ad-container {
+    display: none !important;
+}
+
+/* Ads in Video-on-Demand (VOD) */
+##.vod-ad, 
+##.vod-video-ad, 
+##.vod-ad-container, 
+##.video-on-demand-ad {
+    display: none !important;
+}
+
+/* Overlay Ad in Live Streams */
+##.live-ad-overlay, 
+##.ad-overlay-stream, 
+##.live-stream-ad-overlay {
+    display: none !important;
+}
+
+/* Banners in Streaming Apps */
+##.stream-banner-ad, 
+##.ad-banner-stream, 
+##.streaming-banner-ad {
+    display: none !important;
+}
+
+/* Interactive Streaming Ads (Surveys, Polls) */
+##.streaming-interactive-ad, 
+##.survey-stream-ad, 
+##.poll-stream-ad {
+    display: none !important;
+}
+
+/* Full-Screen Video Ads on Streaming Platforms */
+##.full-screen-video-ad, 
+##.full-screen-ad-container, 
+##.streaming-full-screen-ad {
+    display: none !important;
+}
+
+/* Subscription or Promo Offers during Streaming */
+##.stream-subscription-ad, 
+##.promo-streaming-ad, 
+##.streaming-subscription-banner {
+    display: none !important;
+}
+
+/* Music Streaming Ads */
+##.music-stream-ad, 
+##.music-video-ad, 
+##.ad-music-streaming {
+    display: none !important;
+}
+
+/* Ads in Sports Streaming */
+##.sports-stream-ad, 
+##.sports-video-ad, 
+##.live-sports-ad {
+    display: none !important;
+}
+
+
+! --------------------------------
+! Miscellaneous
+! --------------------------------
+||cdn.adsafeprotected.com^
+||cdn.adnxs.com^
+||cdn.tradelab.com^
+||cdn.adtechus.com^
+||cdn.adsrvr.org^
+||akamai.com/adservice^
+||akamai.net/ads^
+
+! --------------------------------
+||cdn.adsafeprotected.com^
+||cdn.adnxs.com^
+||cdn.tradelab.com^
+||cdn.adtechus.com^
+||cdn.adsrvr.org^
+||akamai.com/adservice^
+||akamai.net/ads^
+||ad.doubleclick.net^
+||adclick.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||adserver.adtech.de^
+||ads.yahoo.com^
+||adimg.yahoo.com^
+||pubads.g.doubleclick.net^
+||ads.microsoft.com^
+||ads.msn.com^
+||mads.microsoft.com^
+||cdn.izooto.com^
+||optimizely.com/ad^
+||cdn.4dsply.com^
+||ads.cm^
+||ads.ro^
+||d3f7q84rcdmk0l.cloudfront.net^
+||cdn.openx.net^
+||adroll.com^
+||cdn.adroll.com^
+||fastclick.net^
+||openx.com^
+||p.adsymptotic.com^
+||serving-sys.com^
+||ads7.adbutterfly.com^
+||adthrive.com^
+||ads.sparkle.live^
+||adfusion.com^
+||adgears.com^
+||ads.auction.com^
+||atdmt.com^
+||adviewed.com^
+||ads.thetradedesk.com^
+||pubmatic.com^
+||appnexus.com^
+||adf.ly^
+||moat.com^
+||globaldatahub.com^
+||ads.bytemobile.com^
+||clicksor.com^
+||trafficfactory.biz^
+||cdn.trbo.com^
+||ads.flytxt.com^
+||smartadserver.com^
+||triplelift.com^
+||ads.tremorhub.com^
+||rocketfuel.com^
+||adparlor.com^
+||targeting360.com^
+||adplace.com^
+||adform.net^
+||adzerk.com^
+
+/* Miscellaneous Ads */
+
+/* General Ad Containers */
+##.ad-container, 
+##.ad-banner, 
+##.ad-banner-container, 
+##.ad-wrapper, 
+##.ads-wrapper, 
+##.ads-container, 
+##.advertisement-container, 
+##.ad-slot-wrapper {
+    display: none !important;
+}
+
+/* Pop-up Ads */
+##.popup-ad, 
+##.popup-banner, 
+##.popup-ad-container, 
+##.overlay-ad, 
+##.popup-overlay {
+    display: none !important;
+}
+
+/* Sticky Ads */
+##.sticky-ad, 
+##.sticky-banner, 
+##.sticky-ad-banner, 
+##.sticky-ad-wrapper, 
+##.sticky-ad-container {
+    display: none !important;
+}
+
+/* In-Line Ads */
+##.in-line-ad, 
+##.in-line-banner, 
+##.inline-ad-container, 
+##.inline-ad-wrapper {
+    display: none !important;
+}
+
+/* Social Media Sponsored Ads */
+##.social-media-ad, 
+##.social-media-sponsored, 
+##.sponsored-social-post, 
+##.social-media-ad-banner, 
+##.social-ad-container {
+    display: none !important;
+}
+
+/* Banner Ad Elements */
+##.banner-ad, 
+##.banner-ad-container, 
+##.ad-banner-container, 
+##.ad-banner-slot {
+    display: none !important;
+}
+
+/* Text Ads */
+##.text-ad, 
+##.text-ad-container, 
+##.ad-text, 
+##.text-ad-slot {
+    display: none !important;
+}
+
+/* Floating Ads */
+##.floating-ad, 
+##.floating-banner, 
+##.floating-ad-container, 
+##.floating-ad-wrapper, 
+##.floating-banner-container {
+    display: none !important;
+}
+
+/* Full-Screen Ads */
+##.full-screen-ad, 
+##.fullscreen-ad-container, 
+##.fullscreen-ad-wrapper, 
+##.full-screen-ad-banner {
+    display: none !important;
+}
+
+/* Native Ads */
+##.native-ad, 
+##.native-ad-container, 
+##.native-ad-slot, 
+##.native-ad-wrapper {
+    display: none !important;
+}
+
+/* Sponsored Content */
+##.sponsored-content, 
+##.sponsored-post, 
+##.sponsored-article, 
+##.sponsored-content-container {
+    display: none !important;
+}
+
+/* Email Ads */
+##.email-ad, 
+##.email-banner, 
+##.email-ad-banner, 
+##.email-ad-container {
+    display: none !important;
+}
+
+/* Survey and Poll Ads */
+##.survey-ad, 
+##.poll-ad, 
+##.survey-ad-container, 
+##.poll-ad-container {
+    display: none !important;
+}
+
+/* Survey Pop-ups */
+##.survey-popup, 
+##.popup-survey, 
+##.survey-overlay, 
+##.popup-survey-container {
+    display: none !important;
+}
+
+/* Exit-Intent Pop-ups */
+##.exit-intent-popup, 
+##.exit-popup-ad, 
+##.exit-ad, 
+##.exit-popup-container {
+    display: none !important;
+}
+
+/* Video Pop-ups */
+##.video-popup-ad, 
+##.popup-video-ad, 
+##.video-popup-container, 
+##.video-ad-wrapper {
+    display: none !important;
+}
+
+/* Ad Cards */
+##.ad-card, 
+##.ad-card-container, 
+##.card-ad-container, 
+##.ad-card-wrapper {
+    display: none !important;
+}
+
+/* Modal Ads */
+##.modal-ad, 
+##.modal-ad-container, 
+##.modal-banner-ad, 
+##.modal-ad-wrapper {
+    display: none !important;
+}
+
+/* Mobile App Ads */
+##.mobile-app-ad, 
+##.app-ad, 
+##.app-ad-container, 
+##.mobile-ad-wrapper {
+    display: none !important;
+}
+
+/* App Notification Ads */
+##.app-notification-ad, 
+##.app-ad-notification, 
+##.app-push-ad-container {
+    display: none !important;
+}
+
+/* Sponsored Links */
+##.sponsored-link, 
+##.ad-sponsored-link, 
+##.sponsored-item, 
+##.advertised-link {
+    display: none !important;
+}
+
+/* Page-Specific Ad Placeholders */
+##.page-specific-ad, 
+##.page-ad, 
+##.page-banner-ad, 
+##.specific-page-ad-container {
+    display: none !important;
+}
+
+/* Video Ads in Articles */
+##.article-video-ad, 
+##.video-ad-in-article, 
+##.video-article-ad, 
+##.article-ad-video {
+    display: none !important;
+}
+
+/* Ad Banners in Articles */
+##.article-ad-banner, 
+##.article-banner-ad, 
+##.content-ad-banner {
+    display: none !important;
+}
+
+/* External Link Ads */
+##.external-link-ad, 
+##.ad-link-container, 
+##.external-ad-wrapper, 
+##.external-ad-banner {
+    display: none !important;
+}
+
+/* Ad Elements in Search Results */
+##.search-ad, 
+##.search-result-ad, 
+##.search-ad-wrapper, 
+##.ad-result-container {
+    display: none !important;
+}
+
+/* Content Blocking Ads */
+##.content-blocking-ad, 
+##.ad-overlay-content-block, 
+##.content-blocking-banner {
+    display: none !important;
+}
+
+/* Shopping Cart Ads */
+##.shopping-cart-ad, 
+##.cart-ad-container, 
+##.cart-ad-banner, 
+##.cart-sponsor-ad {
+    display: none !important;
+}
+
+/* News Ad Elements */
+##.news-ad, 
+##.news-ad-container, 
+##.news-banner-ad, 
+##.news-ad-wrapper {
+    display: none !important;
+}
+
+/* Media Gallery Ads */
+##.gallery-ad, 
+##.media-ad-gallery, 
+##.gallery-ad-banner, 
+##.media-ad-wrapper {
+    display: none !important;
+}
+
+/* Side-Bar Ads */
+##.sidebar-ad, 
+##.sidebar-ad-container, 
+##.sidebar-banner-ad, 
+##.sidebar-ad-wrapper {
+    display: none !important;
+}
+! --------------------------------
+! Popular Websites Ad Blocking
+! --------------------------------
+||youtube.com/ads^
+||facebook.com/ads^
+||twitter.com/ads^
+||instagram.com/ads^
+||reddit.com/ads^
+||linkedin.com/ads^
+||pinterest.com/ads^
+||tumblr.com/ads^
+||vimeo.com/ads^
+||dailymotion.com/ads^
+||twitch.tv/ads^
+||netflix.com/ads^
+||hulu.com/ads^
+||disneyplus.com/ads^
+||primevideo.com/ads^
+||crunchyroll.com/ads^
+||funimation.com/ads^
+||mubi.com/ads^
+||sling.com/ads^
+||peacocktv.com/ads^
+||bbc.com/ads^
+||cnn.com/ads^
+||theguardian.com/ads^
+||nytimes.com/ads^
+||washingtonpost.com/ads^
+||bloomberg.com/ads^
+||forbes.com/ads^
+||bbc.co.uk/ads^
+||yahoo.com/ads^
+||msn.com/ads^
+||wikipedia.org/ads^
+||daily.co.uk/ads^
+||espn.com/ads^
+||foxnews.com/ads^
+||abc.com/ads^
+||nbc.com/ads^
+||cnn.com/ads^
+||cbs.com/ads^
+||vogue.com/ads^
+||buzzfeed.com/ads^
+||huffpost.com/ads^
+||usatoday.com/ads^
+||webmd.com/ads^
+||healthline.com/ads^
+||theverge.com/ads^
+||engadget.com/ads^
+||techcrunch.com/ads^
+||wired.com/ads^
+||lifehacker.com/ads^
+||gizmodo.com/ads^
+||arstechnica.com/ads^
+||recode.net/ads^
+||slate.com/ads^
+||wired.co.uk/ads^
+||mirror.co.uk/ads^
+||independent.co.uk/ads^
+||metro.co.uk/ads^
+||skysports.com/ads^
+||sportingnews.com/ads^
+||goal.com/ads^
+||indianexpress.com/ads^
+||hindustantimes.com/ads^
+||timesofindia.indiatimes.com/ads^
+||bbc.com/ads^
+||livemint.com/ads^
+||businessinsider.com/ads^
+||theweek.com/ads^
+||theeconomist.com/ads^
+
+kissasian.*##+js(aeld, /^(?:click|mousedown)$/, _0x)
+keephealth.info,kissasian.*##+js(aopr, mm)
+keephealth.info,kissasian.*##+js(nostif, (), 45000)
+kissasian.*##+js(set, check_adblock, true)
+kissasian.*##+js(nowoif)
+@@||kissasian.*^$ghide
+kissasian.*##.ksAds
+kissasian.*##[id*="ScriptRoot"]
+kissasian.*###videoAd
+kissasian.*###hideAds
+kissasian.*##div[style$="width: 610px;"]:has(.adsbyvli)
+kissasian.*##div[style$="height: 90px;"]:has(.adsbyvli)
+kissasian.*###overplay
+||kissasian.*/Ads/$frame
+
+
+## Ads Blocking Rules for Popular Websites
+! ----------------------------------------
+
+### **YouTube Ads**
+youtube.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+youtube.com##+js(nostif, (), 45000)
+youtube.com##+js(set, check_adblock, true)
+youtube.com##+js(nowoif)
+@@||youtube.com^$ghide
+youtube.com##.ytp-ad-player-overlay
+youtube.com##.ytp-ad-player-overlay-related
+youtube.com##.ytp-ad-text
+youtube.com##.ytp-ad-preview-text
+youtube.com##.ytp-ad-skip-button
+youtube.com##.videoAd
+youtube.com##.ad-container
+
+### **Facebook Ads**
+facebook.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+facebook.com##+js(nostif, (), 45000)
+facebook.com##+js(set, check_adblock, true)
+facebook.com##+js(nowoif)
+@@||facebook.com^$ghide
+facebook.com##.ads-container
+facebook.com##.fbAd
+facebook.com##.adfeed
+facebook.com##.sponsored
+facebook.com##.ad-slot
+facebook.com##.promoted
+facebook.com##.social-ads
+
+### **Instagram Ads**
+instagram.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+instagram.com##+js(nostif, (), 45000)
+instagram.com##+js(set, check_adblock, true)
+instagram.com##+js(nowoif)
+@@||instagram.com^$ghide
+instagram.com##.ad-banner
+instagram.com##.sponsored-post
+instagram.com##.promoted-post
+instagram.com##.ad-container
+instagram.com##.carousel-ad
+
+### **Twitter Ads**
+twitter.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+twitter.com##+js(nostif, (), 45000)
+twitter.com##+js(set, check_adblock, true)
+twitter.com##+js(nowoif)
+@@||twitter.com^$ghide
+twitter.com##.promoted-tweet
+twitter.com##.sponsored-tweet
+twitter.com##.ad-card
+twitter.com##.promoted-stories
+twitter.com##.ad-placement
+
+### **Reddit Ads**
+reddit.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+reddit.com##+js(nostif, (), 45000)
+reddit.com##+js(set, check_adblock, true)
+reddit.com##+js(nowoif)
+@@||reddit.com^$ghide
+reddit.com##.promoted
+reddit.com##.sponsored
+reddit.com##.ad-banner
+reddit.com##.ad-slot
+reddit.com##.native-ad
+
+### **Twitch Ads**
+twitch.tv##+js(aeld, /^(?:click|mousedown)$/, _0x)
+twitch.tv##+js(nostif, (), 45000)
+twitch.tv##+js(set, check_adblock, true)
+twitch.tv##+js(nowoif)
+@@||twitch.tv^$ghide
+twitch.tv##.ad-overlay
+twitch.tv##.ad-banner
+twitch.tv##.ad-container
+twitch.tv##.ads-by-twitch
+twitch.tv##.video-ads
+
+### **Netflix Ads**
+netflix.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+netflix.com##+js(nostif, (), 45000)
+netflix.com##+js(set, check_adblock, true)
+netflix.com##+js(nowoif)
+@@||netflix.com^$ghide
+netflix.com##.ad-banner
+netflix.com##.ad-overlay
+netflix.com##.ad-container
+netflix.com##.sponsored
+
+### **Hulu Ads**
+hulu.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+hulu.com##+js(nostif, (), 45000)
+hulu.com##+js(set, check_adblock, true)
+hulu.com##+js(nowoif)
+@@||hulu.com^$ghide
+hulu.com##.ad-banner
+hulu.com##.video-ads
+hulu.com##.ad-overlay
+hulu.com##.ad-container
+
+### **Prime Video Ads**
+primevideo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+primevideo.com##+js(nostif, (), 45000)
+primevideo.com##+js(set, check_adblock, true)
+primevideo.com##+js(nowoif)
+@@||primevideo.com^$ghide
+primevideo.com##.ad-banner
+primevideo.com##.video-ad
+primevideo.com##.ad-overlay
+primevideo.com##.ad-container
+
+### **Funimation Ads**
+funimation.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+funimation.com##+js(nostif, (), 45000)
+funimation.com##+js(set, check_adblock, true)
+funimation.com##+js(nowoif)
+@@||funimation.com^$ghide
+funimation.com##.ad-banner
+funimation.com##.ads-by-funimation
+funimation.com##.video-ads
+funimation.com##.ad-container
+
+### **Crunchyroll Ads**
+crunchyroll.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+crunchyroll.com##+js(nostif, (), 45000)
+crunchyroll.com##+js(set, check_adblock, true)
+crunchyroll.com##+js(nowoif)
+@@||crunchyroll.com^$ghide
+crunchyroll.com##.ad-banner
+crunchyroll.com##.video-ad
+crunchyroll.com##.ad-container
+crunchyroll.com##.sponsored
+
+### **Yahoo Ads**
+yahoo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yahoo.com##+js(nostif, (), 45000)
+yahoo.com##+js(set, check_adblock, true)
+yahoo.com##+js(nowoif)
+@@||yahoo.com^$ghide
+yahoo.com##.ad-banner
+yahoo.com##.ad-container
+yahoo.com##.native-ad
+yahoo.com##.sponsored
+
+### **MSN Ads**
+msn.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+msn.com##+js(nostif, (), 45000)
+msn.com##+js(set, check_adblock, true)
+msn.com##+js(nowoif)
+@@||msn.com^$ghide
+msn.com##.ad-banner
+msn.com##.ad-container
+msn.com##.native-ad
+msn.com##.sponsored
+
+### **LinkedIn Ads**
+linkedin.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+linkedin.com##+js(nostif, (), 45000)
+linkedin.com##+js(set, check_adblock, true)
+linkedin.com##+js(nowoif)
+@@||linkedin.com^$ghide
+linkedin.com##.ads-container
+linkedin.com##.promoted-ads
+linkedin.com##.sponsored-content
+linkedin.com##.ad-banner
+linkedin.com##.ad-slot
+linkedin.com##.feed-ad
+
+### **Pinterest Ads**
+pinterest.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+pinterest.com##+js(nostif, (), 45000)
+pinterest.com##+js(set, check_adblock, true)
+pinterest.com##+js(nowoif)
+@@||pinterest.com^$ghide
+pinterest.com##.promoted-pin
+pinterest.com##.ad-banner
+pinterest.com##.ads-container
+pinterest.com##.ad-card
+
+### **Tumblr Ads**
+tumblr.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+tumblr.com##+js(nostif, (), 45000)
+tumblr.com##+js(set, check_adblock, true)
+tumblr.com##+js(nowoif)
+@@||tumblr.com^$ghide
+tumblr.com##.sponsored-post
+tumblr.com##.ad-banner
+tumblr.com##.ad-container
+tumblr.com##.native-ad
+
+### **Spotify Ads**
+spotify.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+spotify.com##+js(nostif, (), 45000)
+spotify.com##+js(set, check_adblock, true)
+spotify.com##+js(nowoif)
+@@||spotify.com^$ghide
+spotify.com##.ad-banner
+spotify.com##.ad-overlay
+spotify.com##.ads-container
+spotify.com##.sponsored
+
+### **SoundCloud Ads**
+soundcloud.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+soundcloud.com##+js(nostif, (), 45000)
+soundcloud.com##+js(set, check_adblock, true)
+soundcloud.com##+js(nowoif)
+@@||soundcloud.com^$ghide
+soundcloud.com##.ad-banner
+soundcloud.com##.ads-container
+soundcloud.com##.ad-inline
+
+### **Vimeo Ads**
+vimeo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+vimeo.com##+js(nostif, (), 45000)
+vimeo.com##+js(set, check_adblock, true)
+vimeo.com##+js(nowoif)
+@@||vimeo.com^$ghide
+vimeo.com##.ad-banner
+vimeo.com##.ads-container
+vimeo.com##.video-ad
+vimeo.com##.sponsored-video
+
+### **Bing Ads**
+bing.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bing.com##+js(nostif, (), 45000)
+bing.com##+js(set, check_adblock, true)
+bing.com##+js(nowoif)
+@@||bing.com^$ghide
+bing.com##.ad-banner
+bing.com##.ads-container
+bing.com##.ad-placement
+bing.com##.sponsored-results
+
+### **Yahoo News Ads**
+news.yahoo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+news.yahoo.com##+js(nostif, (), 45000)
+news.yahoo.com##+js(set, check_adblock, true)
+news.yahoo.com##+js(nowoif)
+@@||news.yahoo.com^$ghide
+news.yahoo.com##.ad-banner
+news.yahoo.com##.ads-container
+news.yahoo.com##.promoted
+news.yahoo.com##.native-ad
+
+### **BBC News Ads**
+bbc.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bbc.com##+js(nostif, (), 45000)
+bbc.com##+js(set, check_adblock, true)
+bbc.com##+js(nowoif)
+@@||bbc.com^$ghide
+bbc.com##.ad-banner
+bbc.com##.ads-container
+bbc.com##.promoted-content
+bbc.com##.sponsored
+
+### **CNBC Ads**
+cnbc.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+cnbc.com##+js(nostif, (), 45000)
+cnbc.com##+js(set, check_adblock, true)
+cnbc.com##+js(nowoif)
+@@||cnbc.com^$ghide
+cnbc.com##.ad-banner
+cnbc.com##.ad-container
+cnbc.com##.native-ad
+
+### **The Guardian Ads**
+theguardian.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+theguardian.com##+js(nostif, (), 45000)
+theguardian.com##+js(set, check_adblock, true)
+theguardian.com##+js(nowoif)
+@@||theguardian.com^$ghide
+theguardian.com##.ad-banner
+theguardian.com##.ads-container
+theguardian.com##.promoted-content
+
+### **New York Times Ads**
+nytimes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nytimes.com##+js(nostif, (), 45000)
+nytimes.com##+js(set, check_adblock, true)
+nytimes.com##+js(nowoif)
+@@||nytimes.com^$ghide
+nytimes.com##.ad-banner
+nytimes.com##.ads-container
+nytimes.com##.promoted
+nytimes.com##.sponsored
+
+### **Forbes Ads**
+forbes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+forbes.com##+js(nostif, (), 45000)
+forbes.com##+js(set, check_adblock, true)
+forbes.com##+js(nowoif)
+@@||forbes.com^$ghide
+forbes.com##.ad-banner
+forbes.com##.ads-container
+forbes.com##.promoted-content
+forbes.com##.sponsored
+
+### **Buzzfeed Ads**
+buzzfeed.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+buzzfeed.com##+js(nostif, (), 45000)
+buzzfeed.com##+js(set, check_adblock, true)
+buzzfeed.com##+js(nowoif)
+@@||buzzfeed.com^$ghide
+buzzfeed.com##.ad-banner
+buzzfeed.com##.ads-container
+buzzfeed.com##.sponsored-post
+buzzfeed.com##.promoted
+
+### **Reddit Ads**
+reddit.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+reddit.com##+js(nostif, (), 45000)
+reddit.com##+js(set, check_adblock, true)
+reddit.com##+js(nowoif)
+@@||reddit.com^$ghide
+reddit.com##.promoted-post
+reddit.com##.ad-banner
+reddit.com##.ad-container
+reddit.com##.sponsored-content
+
+### **YouTube Ads**
+youtube.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+youtube.com##+js(nostif, (), 45000)
+youtube.com##+js(set, check_adblock, true)
+youtube.com##+js(nowoif)
+@@||youtube.com^$ghide
+youtube.com##.ytp-ad-player-overlay
+youtube.com##.ytp-ad-preview-text
+youtube.com##.ad-container
+youtube.com##.video-ads
+
+### **Twitter Ads**
+twitter.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+twitter.com##+js(nostif, (), 45000)
+twitter.com##+js(set, check_adblock, true)
+twitter.com##+js(nowoif)
+@@||twitter.com^$ghide
+twitter.com##.promoted-tweet
+twitter.com##.ad-banner
+twitter.com##.ads-container
+twitter.com##.sponsored-tweet
+
+### **Instagram Ads**
+instagram.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+instagram.com##+js(nostif, (), 45000)
+instagram.com##+js(set, check_adblock, true)
+instagram.com##+js(nowoif)
+@@||instagram.com^$ghide
+instagram.com##.sponsored
+instagram.com##.ad-container
+instagram.com##.ads-carousel
+
+### **Twitch Ads**
+twitch.tv##+js(aeld, /^(?:click|mousedown)$/, _0x)
+twitch.tv##+js(nostif, (), 45000)
+twitch.tv##+js(set, check_adblock, true)
+twitch.tv##+js(nowoif)
+@@||twitch.tv^$ghide
+twitch.tv##.video-ad-overlay
+twitch.tv##.ad-banner
+twitch.tv##.ad-container
+
+### **Snapchat Ads**
+snapchat.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+snapchat.com##+js(nostif, (), 45000)
+snapchat.com##+js(set, check_adblock, true)
+snapchat.com##+js(nowoif)
+@@||snapchat.com^$ghide
+snapchat.com##.ad-banner
+snapchat.com##.sponsored-content
+snapchat.com##.ads-container
+
+### **Amazon Ads**
+amazon.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+amazon.com##+js(nostif, (), 45000)
+amazon.com##+js(set, check_adblock, true)
+amazon.com##+js(nowoif)
+@@||amazon.com^$ghide
+amazon.com##.ad-banner
+amazon.com##.sponsored-products
+amazon.com##.ads-container
+amazon.com##.native-ad
+
+### **Quora Ads**
+quora.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+quora.com##+js(nostif, (), 45000)
+quora.com##+js(set, check_adblock, true)
+quora.com##+js(nowoif)
+@@||quora.com^$ghide
+quora.com##.promoted-post
+quora.com##.ad-banner
+quora.com##.ads-container
+quora.com##.sponsored-content
+
+### **Medium Ads**
+medium.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+medium.com##+js(nostif, (), 45000)
+medium.com##+js(set, check_adblock, true)
+medium.com##+js(nowoif)
+@@||medium.com^$ghide
+medium.com##.ad-banner
+medium.com##.ads-container
+medium.com##.sponsored
+
+### **BBC iPlayer Ads**
+bbc.co.uk##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bbc.co.uk##+js(nostif, (), 45000)
+bbc.co.uk##+js(set, check_adblock, true)
+bbc.co.uk##+js(nowoif)
+@@||bbc.co.uk^$ghide
+bbc.co.uk##.ad-banner
+bbc.co.uk##.ads-container
+bbc.co.uk##.video-ad-overlay
+
+### **National Geographic Ads**
+nationalgeographic.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nationalgeographic.com##+js(nostif, (), 45000)
+nationalgeographic.com##+js(set, check_adblock, true)
+nationalgeographic.com##+js(nowoif)
+@@||nationalgeographic.com^$ghide
+nationalgeographic.com##.ad-banner
+nationalgeographic.com##.ads-container
+nationalgeographic.com##.sponsored
+
+### **HuffPost Ads**
+huffpost.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+huffpost.com##+js(nostif, (), 45000)
+huffpost.com##+js(set, check_adblock, true)
+huffpost.com##+js(nowoif)
+@@||huffpost.com^$ghide
+huffpost.com##.ad-banner
+huffpost.com##.ads-container
+huffpost.com##.sponsored-content
+
+### **Mashable Ads**
+mashable.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+mashable.com##+js(nostif, (), 45000)
+mashable.com##+js(set, check_adblock, true)
+mashable.com##+js(nowoif)
+@@||mashable.com^$ghide
+mashable.com##.ad-banner
+mashable.com##.ads-container
+mashable.com##.sponsored
+
+### **CNET Ads**
+cnet.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+cnet.com##+js(nostif, (), 45000)
+cnet.com##+js(set, check_adblock, true)
+cnet.com##+js(nowoif)
+@@||cnet.com^$ghide
+cnet.com##.ad-banner
+cnet.com##.ads-container
+cnet.com##.native-ad
+### **Pinterest Ads**
+pinterest.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+pinterest.com##+js(nostif, (), 45000)
+pinterest.com##+js(set, check_adblock, true)
+pinterest.com##+js(nowoif)
+@@||pinterest.com^$ghide
+pinterest.com##.promoted
+pinterest.com##.ad-container
+pinterest.com##.ads-banner
+pinterest.com##.sponsored-pin
+
+### **Yahoo Ads**
+yahoo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yahoo.com##+js(nostif, (), 45000)
+yahoo.com##+js(set, check_adblock, true)
+yahoo.com##+js(nowoif)
+@@||yahoo.com^$ghide
+yahoo.com##.ad-banner
+yahoo.com##.ads-container
+yahoo.com##.sponsored-content
+
+### **CNN Ads**
+cnn.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+cnn.com##+js(nostif, (), 45000)
+cnn.com##+js(set, check_adblock, true)
+cnn.com##+js(nowoif)
+@@||cnn.com^$ghide
+cnn.com##.ad-banner
+cnn.com##.ads-container
+cnn.com##.sponsored
+
+### **Forbes Ads**
+forbes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+forbes.com##+js(nostif, (), 45000)
+forbes.com##+js(set, check_adblock, true)
+forbes.com##+js(nowoif)
+@@||forbes.com^$ghide
+forbes.com##.ad-banner
+forbes.com##.ads-container
+forbes.com##.sponsored-content
+
+### **BuzzFeed Ads**
+buzzfeed.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+buzzfeed.com##+js(nostif, (), 45000)
+buzzfeed.com##+js(set, check_adblock, true)
+buzzfeed.com##+js(nowoif)
+@@||buzzfeed.com^$ghide
+buzzfeed.com##.ad-banner
+buzzfeed.com##.ads-container
+buzzfeed.com##.sponsored-content
+
+### **NBC News Ads**
+nbcnews.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nbcnews.com##+js(nostif, (), 45000)
+nbcnews.com##+js(set, check_adblock, true)
+nbcnews.com##+js(nowoif)
+@@||nbcnews.com^$ghide
+nbcnews.com##.ad-banner
+nbcnews.com##.ads-container
+nbcnews.com##.sponsored-content
+
+### **The New York Times Ads**
+nytimes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nytimes.com##+js(nostif, (), 45000)
+nytimes.com##+js(set, check_adblock, true)
+nytimes.com##+js(nowoif)
+@@||nytimes.com^$ghide
+nytimes.com##.ad-banner
+nytimes.com##.ads-container
+nytimes.com##.sponsored-content
+
+### **Vimeo Ads**
+vimeo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+vimeo.com##+js(nostif, (), 45000)
+vimeo.com##+js(set, check_adblock, true)
+vimeo.com##+js(nowoif)
+@@||vimeo.com^$ghide
+vimeo.com##.ad-banner
+vimeo.com##.video-ads
+vimeo.com##.sponsored-video
+
+### **LinkedIn Ads**
+linkedin.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+linkedin.com##+js(nostif, (), 45000)
+linkedin.com##+js(set, check_adblock, true)
+linkedin.com##+js(nowoif)
+@@||linkedin.com^$ghide
+linkedin.com##.promoted-content
+linkedin.com##.ad-container
+linkedin.com##.sponsored
+
+### **Spotify Ads**
+spotify.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+spotify.com##+js(nostif, (), 45000)
+spotify.com##+js(set, check_adblock, true)
+spotify.com##+js(nowoif)
+@@||spotify.com^$ghide
+spotify.com##.ad-banner
+spotify.com##.audio-ad
+spotify.com##.sponsored-content
+
+### **Apple News Ads**
+apple.com/news##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apple.com/news##+js(nostif, (), 45000)
+apple.com/news##+js(set, check_adblock, true)
+apple.com/news##+js(nowoif)
+@@||apple.com/news^$ghide
+apple.com/news##.ad-banner
+apple.com/news##.sponsored-content
+apple.com/news##.ads-container
+
+### **Etsy Ads**
+etsy.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+etsy.com##+js(nostif, (), 45000)
+etsy.com##+js(set, check_adblock, true)
+etsy.com##+js(nowoif)
+@@||etsy.com^$ghide
+etsy.com##.ad-banner
+etsy.com##.ads-container
+etsy.com##.sponsored-content
+
+### **Wikipedia Ads**
+wikipedia.org##+js(aeld, /^(?:click|mousedown)$/, _0x)
+wikipedia.org##+js(nostif, (), 45000)
+wikipedia.org##+js(set, check_adblock, true)
+wikipedia.org##+js(nowoif)
+@@||wikipedia.org^$ghide
+wikipedia.org##.ad-banner
+wikipedia.org##.ads-container
+wikipedia.org##.sponsored-content
+### **Medium Ads**
+medium.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+medium.com##+js(nostif, (), 45000)
+medium.com##+js(set, check_adblock, true)
+medium.com##+js(nowoif)
+@@||medium.com^$ghide
+medium.com##.ad-banner
+medium.com##.ads-container
+medium.com##.sponsored-post
+
+### **Instagram Ads**
+instagram.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+instagram.com##+js(nostif, (), 45000)
+instagram.com##+js(set, check_adblock, true)
+instagram.com##+js(nowoif)
+@@||instagram.com^$ghide
+instagram.com##.ad-banner
+instagram.com##.sponsored-post
+instagram.com##.ads-container
+
+### **Twitter Ads**
+twitter.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+twitter.com##+js(nostif, (), 45000)
+twitter.com##+js(set, check_adblock, true)
+twitter.com##+js(nowoif)
+@@||twitter.com^$ghide
+twitter.com##.promoted-tweet
+twitter.com##.ad-container
+twitter.com##.sponsored-tweet
+
+### **YouTube Ads**
+youtube.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+youtube.com##+js(nostif, (), 45000)
+youtube.com##+js(set, check_adblock, true)
+youtube.com##+js(nowoif)
+@@||youtube.com^$ghide
+youtube.com##.ad-banner
+youtube.com##.video-ads
+youtube.com##.ad-container
+youtube.com##.sponsored-content
+
+### **Twitch Ads**
+twitch.tv##+js(aeld, /^(?:click|mousedown)$/, _0x)
+twitch.tv##+js(nostif, (), 45000)
+twitch.tv##+js(set, check_adblock, true)
+twitch.tv##+js(nowoif)
+@@||twitch.tv^$ghide
+twitch.tv##.ad-banner
+twitch.tv##.ads-container
+twitch.tv##.sponsored-video
+
+### **Reddit Ads**
+reddit.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+reddit.com##+js(nostif, (), 45000)
+reddit.com##+js(set, check_adblock, true)
+reddit.com##+js(nowoif)
+@@||reddit.com^$ghide
+reddit.com##.promoted-post
+reddit.com##.ad-banner
+reddit.com##.ads-container
+
+### **Quora Ads**
+quora.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+quora.com##+js(nostif, (), 45000)
+quora.com##+js(set, check_adblock, true)
+quora.com##+js(nowoif)
+@@||quora.com^$ghide
+quora.com##.promoted-content
+quora.com##.ad-container
+quora.com##.sponsored-content
+
+### **BBC Ads**
+bbc.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bbc.com##+js(nostif, (), 45000)
+bbc.com##+js(set, check_adblock, true)
+bbc.com##+js(nowoif)
+@@||bbc.com^$ghide
+bbc.com##.ad-banner
+bbc.com##.ads-container
+bbc.com##.sponsored-content
+
+### **Daily Mail Ads**
+dailymail.co.uk##+js(aeld, /^(?:click|mousedown)$/, _0x)
+dailymail.co.uk##+js(nostif, (), 45000)
+dailymail.co.uk##+js(set, check_adblock, true)
+dailymail.co.uk##+js(nowoif)
+@@||dailymail.co.uk^$ghide
+dailymail.co.uk##.ad-banner
+dailymail.co.uk##.ads-container
+dailymail.co.uk##.sponsored-content
+
+### **BuzzFeed Ads**
+buzzfeed.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+buzzfeed.com##+js(nostif, (), 45000)
+buzzfeed.com##+js(set, check_adblock, true)
+buzzfeed.com##+js(nowoif)
+@@||buzzfeed.com^$ghide
+buzzfeed.com##.ad-banner
+buzzfeed.com##.ads-container
+buzzfeed.com##.sponsored-content
+
+### **The Guardian Ads**
+theguardian.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+theguardian.com##+js(nostif, (), 45000)
+theguardian.com##+js(set, check_adblock, true)
+theguardian.com##+js(nowoif)
+@@||theguardian.com^$ghide
+theguardian.com##.ad-banner
+theguardian.com##.ads-container
+theguardian.com##.sponsored-content
+
+### **Amazon Ads**
+amazon.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+amazon.com##+js(nostif, (), 45000)
+amazon.com##+js(set, check_adblock, true)
+amazon.com##+js(nowoif)
+@@||amazon.com^$ghide
+amazon.com##.ad-banner
+amazon.com##.sponsored-products
+amazon.com##.ads-container
+
+### **Etsy Ads**
+etsy.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+etsy.com##+js(nostif, (), 45000)
+etsy.com##+js(set, check_adblock, true)
+etsy.com##+js(nowoif)
+@@||etsy.com^$ghide
+etsy.com##.ad-banner
+etsy.com##.ads-container
+etsy.com##.sponsored-listing
+### **CNN Ads**
+cnn.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+cnn.com##+js(nostif, (), 45000)
+cnn.com##+js(set, check_adblock, true)
+cnn.com##+js(nowoif)
+@@||cnn.com^$ghide
+cnn.com##.ad-banner
+cnn.com##.ads-container
+cnn.com##.sponsored-content
+
+### **The New York Times Ads**
+nytimes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nytimes.com##+js(nostif, (), 45000)
+nytimes.com##+js(set, check_adblock, true)
+nytimes.com##+js(nowoif)
+@@||nytimes.com^$ghide
+nytimes.com##.ad-banner
+nytimes.com##.ads-container
+nytimes.com##.sponsored-content
+
+### **The Washington Post Ads**
+washingtonpost.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+washingtonpost.com##+js(nostif, (), 45000)
+washingtonpost.com##+js(set, check_adblock, true)
+washingtonpost.com##+js(nowoif)
+@@||washingtonpost.com^$ghide
+washingtonpost.com##.ad-banner
+washingtonpost.com##.ads-container
+washingtonpost.com##.sponsored-content
+
+### **BBC News Ads**
+bbc.com/news##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bbc.com/news##+js(nostif, (), 45000)
+bbc.com/news##+js(set, check_adblock, true)
+bbc.com/news##+js(nowoif)
+@@||bbc.com/news^$ghide
+bbc.com/news##.ad-banner
+bbc.com/news##.ads-container
+bbc.com/news##.sponsored-content
+
+### **The Guardian Ads**
+theguardian.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+theguardian.com##+js(nostif, (), 45000)
+theguardian.com##+js(set, check_adblock, true)
+theguardian.com##+js(nowoif)
+@@||theguardian.com^$ghide
+theguardian.com##.ad-banner
+theguardian.com##.ads-container
+theguardian.com##.sponsored-content
+
+### **Reuters Ads**
+reuters.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+reuters.com##+js(nostif, (), 45000)
+reuters.com##+js(set, check_adblock, true)
+reuters.com##+js(nowoif)
+@@||reuters.com^$ghide
+reuters.com##.ad-banner
+reuters.com##.ads-container
+reuters.com##.sponsored-content
+
+### **Fox News Ads**
+foxnews.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+foxnews.com##+js(nostif, (), 45000)
+foxnews.com##+js(set, check_adblock, true)
+foxnews.com##+js(nowoif)
+@@||foxnews.com^$ghide
+foxnews.com##.ad-banner
+foxnews.com##.ads-container
+foxnews.com##.sponsored-content
+
+### **HuffPost Ads**
+huffpost.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+huffpost.com##+js(nostif, (), 45000)
+huffpost.com##+js(set, check_adblock, true)
+huffpost.com##+js(nowoif)
+@@||huffpost.com^$ghide
+huffpost.com##.ad-banner
+huffpost.com##.ads-container
+huffpost.com##.sponsored-content
+
+### **Al Jazeera Ads**
+aljazeera.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+aljazeera.com##+js(nostif, (), 45000)
+aljazeera.com##+js(set, check_adblock, true)
+aljazeera.com##+js(nowoif)
+@@||aljazeera.com^$ghide
+aljazeera.com##.ad-banner
+aljazeera.com##.ads-container
+aljazeera.com##.sponsored-content
+
+### **Forbes Ads**
+forbes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+forbes.com##+js(nostif, (), 45000)
+forbes.com##+js(set, check_adblock, true)
+forbes.com##+js(nowoif)
+@@||forbes.com^$ghide
+forbes.com##.ad-banner
+forbes.com##.ads-container
+forbes.com##.sponsored-content
+
+### **Bloomberg Ads**
+bloomberg.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bloomberg.com##+js(nostif, (), 45000)
+bloomberg.com##+js(set, check_adblock, true)
+bloomberg.com##+js(nowoif)
+@@||bloomberg.com^$ghide
+bloomberg.com##.ad-banner
+bloomberg.com##.ads-container
+bloomberg.com##.sponsored-content
+### **The Independent Ads**
+independent.co.uk##+js(aeld, /^(?:click|mousedown)$/, _0x)
+independent.co.uk##+js(nostif, (), 45000)
+independent.co.uk##+js(set, check_adblock, true)
+independent.co.uk##+js(nowoif)
+@@||independent.co.uk^$ghide
+independent.co.uk##.ad-banner
+independent.co.uk##.ads-container
+independent.co.uk##.sponsored-content
+
+### **USA Today Ads**
+usatoday.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+usatoday.com##+js(nostif, (), 45000)
+usatoday.com##+js(set, check_adblock, true)
+usatoday.com##+js(nowoif)
+@@||usatoday.com^$ghide
+usatoday.com##.ad-banner
+usatoday.com##.ads-container
+usatoday.com##.sponsored-content
+
+### **Financial Times Ads**
+ft.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+ft.com##+js(nostif, (), 45000)
+ft.com##+js(set, check_adblock, true)
+ft.com##+js(nowoif)
+@@||ft.com^$ghide
+ft.com##.ad-banner
+ft.com##.ads-container
+ft.com##.sponsored-content
+
+### **The Times Ads**
+thetimes.co.uk##+js(aeld, /^(?:click|mousedown)$/, _0x)
+thetimes.co.uk##+js(nostif, (), 45000)
+thetimes.co.uk##+js(set, check_adblock, true)
+thetimes.co.uk##+js(nowoif)
+@@||thetimes.co.uk^$ghide
+thetimes.co.uk##.ad-banner
+thetimes.co.uk##.ads-container
+thetimes.co.uk##.sponsored-content
+
+### **Newsweek Ads**
+newsweek.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+newsweek.com##+js(nostif, (), 45000)
+newsweek.com##+js(set, check_adblock, true)
+newsweek.com##+js(nowoif)
+@@||newsweek.com^$ghide
+newsweek.com##.ad-banner
+newsweek.com##.ads-container
+newsweek.com##.sponsored-content
+
+### **Daily Mail Ads**
+dailymail.co.uk##+js(aeld, /^(?:click|mousedown)$/, _0x)
+dailymail.co.uk##+js(nostif, (), 45000)
+dailymail.co.uk##+js(set, check_adblock, true)
+dailymail.co.uk##+js(nowoif)
+@@||dailymail.co.uk^$ghide
+dailymail.co.uk##.ad-banner
+dailymail.co.uk##.ads-container
+dailymail.co.uk##.sponsored-content
+
+### **Mashable Ads**
+mashable.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+mashable.com##+js(nostif, (), 45000)
+mashable.com##+js(set, check_adblock, true)
+mashable.com##+js(nowoif)
+@@||mashable.com^$ghide
+mashable.com##.ad-banner
+mashable.com##.ads-container
+mashable.com##.sponsored-content
+
+### **TechCrunch Ads**
+techcrunch.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+techcrunch.com##+js(nostif, (), 45000)
+techcrunch.com##+js(set, check_adblock, true)
+techcrunch.com##+js(nowoif)
+@@||techcrunch.com^$ghide
+techcrunch.com##.ad-banner
+techcrunch.com##.ads-container
+techcrunch.com##.sponsored-content
+
+### **Vox Ads**
+vox.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+vox.com##+js(nostif, (), 45000)
+vox.com##+js(set, check_adblock, true)
+vox.com##+js(nowoif)
+@@||vox.com^$ghide
+vox.com##.ad-banner
+vox.com##.ads-container
+vox.com##.sponsored-content
+
+### **Slate Ads**
+slate.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+slate.com##+js(nostif, (), 45000)
+slate.com##+js(set, check_adblock, true)
+slate.com##+js(nowoif)
+@@||slate.com^$ghide
+slate.com##.ad-banner
+slate.com##.ads-container
+slate.com##.sponsored-content
+### **The Guardian Ads**
+theguardian.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+theguardian.com##+js(nostif, (), 45000)
+theguardian.com##+js(set, check_adblock, true)
+theguardian.com##+js(nowoif)
+@@||theguardian.com^$ghide
+theguardian.com##.ad-banner
+theguardian.com##.ads-container
+theguardian.com##.sponsored-content
+
+### **Bloomberg Ads**
+bloomberg.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bloomberg.com##+js(nostif, (), 45000)
+bloomberg.com##+js(set, check_adblock, true)
+bloomberg.com##+js(nowoif)
+@@||bloomberg.com^$ghide
+bloomberg.com##.ad-banner
+bloomberg.com##.ads-container
+bloomberg.com##.sponsored-content
+
+### **The Washington Post Ads**
+washingtonpost.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+washingtonpost.com##+js(nostif, (), 45000)
+washingtonpost.com##+js(set, check_adblock, true)
+washingtonpost.com##+js(nowoif)
+@@||washingtonpost.com^$ghide
+washingtonpost.com##.ad-banner
+washingtonpost.com##.ads-container
+washingtonpost.com##.sponsored-content
+
+### **Reuters Ads**
+reuters.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+reuters.com##+js(nostif, (), 45000)
+reuters.com##+js(set, check_adblock, true)
+reuters.com##+js(nowoif)
+@@||reuters.com^$ghide
+reuters.com##.ad-banner
+reuters.com##.ads-container
+reuters.com##.sponsored-content
+
+### **The New York Times Ads**
+nytimes.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nytimes.com##+js(nostif, (), 45000)
+nytimes.com##+js(set, check_adblock, true)
+nytimes.com##+js(nowoif)
+@@||nytimes.com^$ghide
+nytimes.com##.ad-banner
+nytimes.com##.ads-container
+nytimes.com##.sponsored-content
+
+### **The Huffington Post Ads**
+huffpost.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+huffpost.com##+js(nostif, (), 45000)
+huffpost.com##+js(set, check_adblock, true)
+huffpost.com##+js(nowoif)
+@@||huffpost.com^$ghide
+huffpost.com##.ad-banner
+huffpost.com##.ads-container
+huffpost.com##.sponsored-content
+
+### **Yahoo News Ads**
+news.yahoo.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+news.yahoo.com##+js(nostif, (), 45000)
+news.yahoo.com##+js(set, check_adblock, true)
+news.yahoo.com##+js(nowoif)
+@@||news.yahoo.com^$ghide
+news.yahoo.com##.ad-banner
+news.yahoo.com##.ads-container
+news.yahoo.com##.sponsored-content
+
+### **CNN Ads**
+cnn.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+cnn.com##+js(nostif, (), 45000)
+cnn.com##+js(set, check_adblock, true)
+cnn.com##+js(nowoif)
+@@||cnn.com^$ghide
+cnn.com##.ad-banner
+cnn.com##.ads-container
+cnn.com##.sponsored-content
+
+### **NBC News Ads**
+nbcnews.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+nbcnews.com##+js(nostif, (), 45000)
+nbcnews.com##+js(set, check_adblock, true)
+nbcnews.com##+js(nowoif)
+@@||nbcnews.com^$ghide
+nbcnews.com##.ad-banner
+nbcnews.com##.ads-container
+nbcnews.com##.sponsored-content
+
+### **ABC News Ads**
+abcnews.go.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+abcnews.go.com##+js(nostif, (), 45000)
+abcnews.go.com##+js(set, check_adblock, true)
+abcnews.go.com##+js(nowoif)
+@@||abcnews.go.com^$ghide
+abcnews.go.com##.ad-banner
+abcnews.go.com##.ads-container
+abcnews.go.com##.sponsored-content
+
+### **MediaFire Ads**
+mediafire.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+mediafire.com##+js(nostif, (), 45000)
+mediafire.com##+js(set, check_adblock, true)
+mediafire.com##+js(nowoif)
+@@||mediafire.com^$ghide
+mediafire.com##.ad-banner
+mediafire.com##.ads-container
+mediafire.com##.sponsored-content
+mediafire.com##.popup-ads
+mediafire.com###ad-iframe
+
+### **Zippyshare Ads**
+zippyshare.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+zippyshare.com##+js(nostif, (), 45000)
+zippyshare.com##+js(set, check_adblock, true)
+zippyshare.com##+js(nowoif)
+@@||zippyshare.com^$ghide
+zippyshare.com##.ad-banner
+zippyshare.com##.ads-container
+zippyshare.com##.sponsored-content
+zippyshare.com##.popup-ads
+zippyshare.com###ad-iframe
+
+### **4Shared Ads**
+4shared.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+4shared.com##+js(nostif, (), 45000)
+4shared.com##+js(set, check_adblock, true)
+4shared.com##+js(nowoif)
+@@||4shared.com^$ghide
+4shared.com##.ad-banner
+4shared.com##.ads-container
+4shared.com##.sponsored-content
+4shared.com##.popup-ads
+4shared.com###ad-iframe
+
+### **Rapidgator Ads**
+rapidgator.net##+js(aeld, /^(?:click|mousedown)$/, _0x)
+rapidgator.net##+js(nostif, (), 45000)
+rapidgator.net##+js(set, check_adblock, true)
+rapidgator.net##+js(nowoif)
+@@||rapidgator.net^$ghide
+rapidgator.net##.ad-banner
+rapidgator.net##.ads-container
+rapidgator.net##.sponsored-content
+rapidgator.net##.popup-ads
+rapidgator.net###ad-iframe
+
+### **Keep2Share Ads**
+keep2share.cc##+js(aeld, /^(?:click|mousedown)$/, _0x)
+keep2share.cc##+js(nostif, (), 45000)
+keep2share.cc##+js(set, check_adblock, true)
+keep2share.cc##+js(nowoif)
+@@||keep2share.cc^$ghide
+keep2share.cc##.ad-banner
+keep2share.cc##.ads-container
+keep2share.cc##.sponsored-content
+keep2share.cc##.popup-ads
+keep2share.cc###ad-iframe
+
+### **FileFactory Ads**
+filefactory.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+filefactory.com##+js(nostif, (), 45000)
+filefactory.com##+js(set, check_adblock, true)
+filefactory.com##+js(nowoif)
+@@||filefactory.com^$ghide
+filefactory.com##.ad-banner
+filefactory.com##.ads-container
+filefactory.com##.sponsored-content
+filefactory.com##.popup-ads
+filefactory.com###ad-iframe
+
+### **Uploaded Ads**
+uploaded.net##+js(aeld, /^(?:click|mousedown)$/, _0x)
+uploaded.net##+js(nostif, (), 45000)
+uploaded.net##+js(set, check_adblock, true)
+uploaded.net##+js(nowoif)
+@@||uploaded.net^$ghide
+uploaded.net##.ad-banner
+uploaded.net##.ads-container
+uploaded.net##.sponsored-content
+uploaded.net##.popup-ads
+uploaded.net###ad-iframe
+
+### **Download.com Ads**
+download.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+download.com##+js(nostif, (), 45000)
+download.com##+js(set, check_adblock, true)
+download.com##+js(nowoif)
+@@||download.com^$ghide
+download.com##.ad-banner
+download.com##.ads-container
+download.com##.sponsored-content
+download.com##.popup-ads
+download.com###ad-iframe
+
+### **Mega.nz Ads**
+mega.nz##+js(aeld, /^(?:click|mousedown)$/, _0x)
+mega.nz##+js(nostif, (), 45000)
+mega.nz##+js(set, check_adblock, true)
+mega.nz##+js(nowoif)
+@@||mega.nz^$ghide
+mega.nz##.ad-banner
+mega.nz##.ads-container
+mega.nz##.sponsored-content
+mega.nz##.popup-ads
+mega.nz###ad-iframe
+
+### **Bitshare Ads**
+bitshare.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bitshare.com##+js(nostif, (), 45000)
+bitshare.com##+js(set, check_adblock, true)
+bitshare.com##+js(nowoif)
+@@||bitshare.com^$ghide
+bitshare.com##.ad-banner
+bitshare.com##.ads-container
+bitshare.com##.sponsored-content
+bitshare.com##.popup-ads
+bitshare.com###ad-iframe
+
+### **JumboFiles Ads**
+jumbofiles.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+jumbofiles.com##+js(nostif, (), 45000)
+jumbofiles.com##+js(set, check_adblock, true)
+jumbofiles.com##+js(nowoif)
+@@||jumbofiles.com^$ghide
+jumbofiles.com##.ad-banner
+jumbofiles.com##.ads-container
+jumbofiles.com##.sponsored-content
+jumbofiles.com##.popup-ads
+jumbofiles.com###ad-iframe
+
+
+
+
+### **1337x.to Ads**
+1337x.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+1337x.to##+js(nostif, (), 45000)
+1337x.to##+js(set, check_adblock, true)
+1337x.to##+js(nowoif)
+@@||1337x.to^$ghide
+1337x.to##.ad-banner
+1337x.to##.ads-container
+1337x.to##.sponsored-content
+1337x.to##.popup-ads
+1337x.to###ad-iframe
+
+### **YTS.mx Ads**
+yts.mx##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yts.mx##+js(nostif, (), 45000)
+yts.mx##+js(set, check_adblock, true)
+yts.mx##+js(nowoif)
+@@||yts.mx^$ghide
+yts.mx##.ad-banner
+yts.mx##.ads-container
+yts.mx##.sponsored-content
+yts.mx##.popup-ads
+yts.mx###ad-iframe
+
+### **RARBG Ads**
+rarbg.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+rarbg.to##+js(nostif, (), 45000)
+rarbg.to##+js(set, check_adblock, true)
+rarbg.to##+js(nowoif)
+@@||rarbg.to^$ghide
+rarbg.to##.ad-banner
+rarbg.to##.ads-container
+rarbg.to##.sponsored-content
+rarbg.to##.popup-ads
+rarbg.to###ad-iframe
+
+### **Torlock Ads**
+torlock.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+torlock.com##+js(nostif, (), 45000)
+torlock.com##+js(set, check_adblock, true)
+torlock.com##+js(nowoif)
+@@||torlock.com^$ghide
+torlock.com##.ad-banner
+torlock.com##.ads-container
+torlock.com##.sponsored-content
+torlock.com##.popup-ads
+torlock.com###ad-iframe
+
+### **Fmovies Ads**
+fmovies.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+fmovies.to##+js(nostif, (), 45000)
+fmovies.to##+js(set, check_adblock, true)
+fmovies.to##+js(nowoif)
+@@||fmovies.to^$ghide
+fmovies.to##.ad-banner
+fmovies.to##.ads-container
+fmovies.to##.sponsored-content
+fmovies.to##.popup-ads
+fmovies.to###ad-iframe
+
+### **Putlocker Ads**
+putlocker.vip##+js(aeld, /^(?:click|mousedown)$/, _0x)
+putlocker.vip##+js(nostif, (), 45000)
+putlocker.vip##+js(set, check_adblock, true)
+putlocker.vip##+js(nowoif)
+@@||putlocker.vip^$ghide
+putlocker.vip##.ad-banner
+putlocker.vip##.ads-container
+putlocker.vip##.sponsored-content
+putlocker.vip##.popup-ads
+putlocker.vip###ad-iframe
+
+### **SolarMovie Ads**
+solarmovie.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+solarmovie.to##+js(nostif, (), 45000)
+solarmovie.to##+js(set, check_adblock, true)
+solarmovie.to##+js(nowoif)
+@@||solarmovie.to^$ghide
+solarmovie.to##.ad-banner
+solarmovie.to##.ads-container
+solarmovie.to##.sponsored-content
+solarmovie.to##.popup-ads
+solarmovie.to###ad-iframe
+
+### **Movie4k Ads**
+movie4k.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+movie4k.to##+js(nostif, (), 45000)
+movie4k.to##+js(set, check_adblock, true)
+movie4k.to##+js(nowoif)
+@@||movie4k.to^$ghide
+movie4k.to##.ad-banner
+movie4k.to##.ads-container
+movie4k.to##.sponsored-content
+movie4k.to##.popup-ads
+movie4k.to###ad-iframe
+
+### **Popcorn Time Ads**
+popcorntime.app##+js(aeld, /^(?:click|mousedown)$/, _0x)
+popcorntime.app##+js(nostif, (), 45000)
+popcorntime.app##+js(set, check_adblock, true)
+popcorntime.app##+js(nowoif)
+@@||popcorntime.app^$ghide
+popcorntime.app##.ad-banner
+popcorntime.app##.ads-container
+popcorntime.app##.sponsored-content
+popcorntime.app##.popup-ads
+popcorntime.app###ad-iframe
+
+### **123Movies Ads**
+123movieshub.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+123movieshub.to##+js(nostif, (), 45000)
+123movieshub.to##+js(set, check_adblock, true)
+123movieshub.to##+js(nowoif)
+@@||123movieshub.to^$ghide
+123movieshub.to##.ad-banner
+123movieshub.to##.ads-container
+123movieshub.to##.sponsored-content
+123movieshub.to##.popup-ads
+123movieshub.to###ad-iframe
+
+### **WatchSeries Ads**
+watchserieshd.cc##+js(aeld, /^(?:click|mousedown)$/, _0x)
+watchserieshd.cc##+js(nostif, (), 45000)
+watchserieshd.cc##+js(set, check_adblock, true)
+watchserieshd.cc##+js(nowoif)
+@@||watchserieshd.cc^$ghide
+watchserieshd.cc##.ad-banner
+watchserieshd.cc##.ads-container
+watchserieshd.cc##.sponsored-content
+watchserieshd.cc##.popup-ads
+watchserieshd.cc###ad-iframe
+
+### **YesMovies Ads**
+yesmovies.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yesmovies.to##+js(nostif, (), 45000)
+yesmovies.to##+js(set, check_adblock, true)
+yesmovies.to##+js(nowoif)
+@@||yesmovies.to^$ghide
+yesmovies.to##.ad-banner
+yesmovies.to##.ads-container
+yesmovies.to##.sponsored-content
+yesmovies.to##.popup-ads
+yesmovies.to###ad-iframe
+### **MovieWatcher Ads**
+moviewatcher.is##+js(aeld, /^(?:click|mousedown)$/, _0x)
+moviewatcher.is##+js(nostif, (), 45000)
+moviewatcher.is##+js(set, check_adblock, true)
+moviewatcher.is##+js(nowoif)
+@@||moviewatcher.is^$ghide
+moviewatcher.is##.ad-banner
+moviewatcher.is##.ads-container
+moviewatcher.is##.sponsored-content
+moviewatcher.is##.popup-ads
+moviewatcher.is###ad-iframe
+
+### **GoMovies Ads**
+gomovies.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+gomovies.to##+js(nostif, (), 45000)
+gomovies.to##+js(set, check_adblock, true)
+gomovies.to##+js(nowoif)
+@@||gomovies.to^$ghide
+gomovies.to##.ad-banner
+gomovies.to##.ads-container
+gomovies.to##.sponsored-content
+gomovies.to##.popup-ads
+gomovies.to###ad-iframe
+
+### **LosMovies Ads**
+losmovies.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+losmovies.to##+js(nostif, (), 45000)
+losmovies.to##+js(set, check_adblock, true)
+losmovies.to##+js(nowoif)
+@@||losmovies.to^$ghide
+losmovies.to##.ad-banner
+losmovies.to##.ads-container
+losmovies.to##.sponsored-content
+losmovies.to##.popup-ads
+losmovies.to###ad-iframe
+
+### **StreamLord Ads**
+streamlord.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+streamlord.com##+js(nostif, (), 45000)
+streamlord.com##+js(set, check_adblock, true)
+streamlord.com##+js(nowoif)
+@@||streamlord.com^$ghide
+streamlord.com##.ad-banner
+streamlord.com##.ads-container
+streamlord.com##.sponsored-content
+streamlord.com##.popup-ads
+streamlord.com###ad-iframe
+
+### **BMovies Ads**
+bmovies.cc##+js(aeld, /^(?:click|mousedown)$/, _0x)
+bmovies.cc##+js(nostif, (), 45000)
+bmovies.cc##+js(set, check_adblock, true)
+bmovies.cc##+js(nowoif)
+@@||bmovies.cc^$ghide
+bmovies.cc##.ad-banner
+bmovies.cc##.ads-container
+bmovies.cc##.sponsored-content
+bmovies.cc##.popup-ads
+bmovies.cc###ad-iframe
+
+### **Cineplex Ads**
+cineplex.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+cineplex.com##+js(nostif, (), 45000)
+cineplex.com##+js(set, check_adblock, true)
+cineplex.com##+js(nowoif)
+@@||cineplex.com^$ghide
+cineplex.com##.ad-banner
+cineplex.com##.ads-container
+cineplex.com##.sponsored-content
+cineplex.com##.popup-ads
+cineplex.com###ad-iframe
+
+### **Movies123 Ads**
+movies123.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+movies123.to##+js(nostif, (), 45000)
+movies123.to##+js(set, check_adblock, true)
+movies123.to##+js(nowoif)
+@@||movies123.to^$ghide
+movies123.to##.ad-banner
+movies123.to##.ads-container
+movies123.to##.sponsored-content
+movies123.to##.popup-ads
+movies123.to###ad-iframe
+
+### **Flixtor Ads**
+flixtor.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+flixtor.to##+js(nostif, (), 45000)
+flixtor.to##+js(set, check_adblock, true)
+flixtor.to##+js(nowoif)
+@@||flixtor.to^$ghide
+flixtor.to##.ad-banner
+flixtor.to##.ads-container
+flixtor.to##.sponsored-content
+flixtor.to##.popup-ads
+flixtor.to###ad-iframe
+
+### **StreamMovie Ads**
+streammovie.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+streammovie.to##+js(nostif, (), 45000)
+streammovie.to##+js(set, check_adblock, true)
+streammovie.to##+js(nowoif)
+@@||streammovie.to^$ghide
+streammovie.to##.ad-banner
+streammovie.to##.ads-container
+streammovie.to##.sponsored-content
+streammovie.to##.popup-ads
+streammovie.to###ad-iframe
+
+### **PrimeWire Ads**
+primewire.ag##+js(aeld, /^(?:click|mousedown)$/, _0x)
+primewire.ag##+js(nostif, (), 45000)
+primewire.ag##+js(set, check_adblock, true)
+primewire.ag##+js(nowoif)
+@@||primewire.ag^$ghide
+primewire.ag##.ad-banner
+primewire.ag##.ads-container
+primewire.ag##.sponsored-content
+primewire.ag##.popup-ads
+primewire.ag###ad-iframe
+
+### **Vumoo Ads**
+vumoo.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+vumoo.to##+js(nostif, (), 45000)
+vumoo.to##+js(set, check_adblock, true)
+vumoo.to##+js(nowoif)
+@@||vumoo.to^$ghide
+vumoo.to##.ad-banner
+vumoo.to##.ads-container
+vumoo.to##.sponsored-content
+vumoo.to##.popup-ads
+vumoo.to###ad-iframe
+### **123Movies Ads**
+123movieshub.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+123movieshub.to##+js(nostif, (), 45000)
+123movieshub.to##+js(set, check_adblock, true)
+123movieshub.to##+js(nowoif)
+@@||123movieshub.to^$ghide
+123movieshub.to##.ad-banner
+123movieshub.to##.ads-container
+123movieshub.to##.sponsored-content
+123movieshub.to##.popup-ads
+123movieshub.to###ad-iframe
+
+### **Solarmovie Ads**
+solarmovie.id##+js(aeld, /^(?:click|mousedown)$/, _0x)
+solarmovie.id##+js(nostif, (), 45000)
+solarmovie.id##+js(set, check_adblock, true)
+solarmovie.id##+js(nowoif)
+@@||solarmovie.id^$ghide
+solarmovie.id##.ad-banner
+solarmovie.id##.ads-container
+solarmovie.id##.sponsored-content
+solarmovie.id##.popup-ads
+solarmovie.id###ad-iframe
+
+### **Putlocker Ads**
+putlocker.rs##+js(aeld, /^(?:click|mousedown)$/, _0x)
+putlocker.rs##+js(nostif, (), 45000)
+putlocker.rs##+js(set, check_adblock, true)
+putlocker.rs##+js(nowoif)
+@@||putlocker.rs^$ghide
+putlocker.rs##.ad-banner
+putlocker.rs##.ads-container
+putlocker.rs##.sponsored-content
+putlocker.rs##.popup-ads
+putlocker.rs###ad-iframe
+
+### **WatchSeries Ads**
+watchserieshd.cc##+js(aeld, /^(?:click|mousedown)$/, _0x)
+watchserieshd.cc##+js(nostif, (), 45000)
+watchserieshd.cc##+js(set, check_adblock, true)
+watchserieshd.cc##+js(nowoif)
+@@||watchserieshd.cc^$ghide
+watchserieshd.cc##.ad-banner
+watchserieshd.cc##.ads-container
+watchserieshd.cc##.sponsored-content
+watchserieshd.cc##.popup-ads
+watchserieshd.cc###ad-iframe
+
+### **Movie4k Ads**
+movie4k.org##+js(aeld, /^(?:click|mousedown)$/, _0x)
+movie4k.org##+js(nostif, (), 45000)
+movie4k.org##+js(set, check_adblock, true)
+movie4k.org##+js(nowoif)
+@@||movie4k.org^$ghide
+movie4k.org##.ad-banner
+movie4k.org##.ads-container
+movie4k.org##.sponsored-content
+movie4k.org##.popup-ads
+movie4k.org###ad-iframe
+
+### **Yify Movies Ads**
+yify.tv##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yify.tv##+js(nostif, (), 45000)
+yify.tv##+js(set, check_adblock, true)
+yify.tv##+js(nowoif)
+@@||yify.tv^$ghide
+yify.tv##.ad-banner
+yify.tv##.ads-container
+yify.tv##.sponsored-content
+yify.tv##.popup-ads
+yify.tv###ad-iframe
+
+### **WatchFree Ads**
+watchfree.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+watchfree.to##+js(nostif, (), 45000)
+watchfree.to##+js(set, check_adblock, true)
+watchfree.to##+js(nowoif)
+@@||watchfree.to^$ghide
+watchfree.to##.ad-banner
+watchfree.to##.ads-container
+watchfree.to##.sponsored-content
+watchfree.to##.popup-ads
+watchfree.to###ad-iframe
+
+### **Fmovies Ads**
+fmovies.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+fmovies.to##+js(nostif, (), 45000)
+fmovies.to##+js(set, check_adblock, true)
+fmovies.to##+js(nowoif)
+@@||fmovies.to^$ghide
+fmovies.to##.ad-banner
+fmovies.to##.ads-container
+fmovies.to##.sponsored-content
+fmovies.to##.popup-ads
+fmovies.to###ad-iframe
+
+### **Watch Movies Free Ads**
+watchmoviesfree.org##+js(aeld, /^(?:click|mousedown)$/, _0x)
+watchmoviesfree.org##+js(nostif, (), 45000)
+watchmoviesfree.org##+js(set, check_adblock, true)
+watchmoviesfree.org##+js(nowoif)
+@@||watchmoviesfree.org^$ghide
+watchmoviesfree.org##.ad-banner
+watchmoviesfree.org##.ads-container
+watchmoviesfree.org##.sponsored-content
+watchmoviesfree.org##.popup-ads
+watchmoviesfree.org###ad-iframe
+
+### **YesMovies Ads**
+yesmovies.to##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yesmovies.to##+js(nostif, (), 45000)
+yesmovies.to##+js(set, check_adblock, true)
+yesmovies.to##+js(nowoif)
+@@||yesmovies.to^$ghide
+yesmovies.to##.ad-banner
+yesmovies.to##.ads-container
+yesmovies.to##.sponsored-content
+yesmovies.to##.popup-ads
+yesmovies.to###ad-iframe
+### **APKPure Ads**
+apkpure.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkpure.com##+js(nostif, (), 45000)
+apkpure.com##+js(set, check_adblock, true)
+apkpure.com##+js(nowoif)
+@@||apkpure.com^$ghide
+apkpure.com##.ad-banner
+apkpure.com##.ads-container
+apkpure.com##.sponsored-content
+apkpure.com##.popup-ads
+apkpure.com###ad-iframe
+
+### **APKMirror Ads**
+apkmirror.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkmirror.com##+js(nostif, (), 45000)
+apkmirror.com##+js(set, check_adblock, true)
+apkmirror.com##+js(nowoif)
+@@||apkmirror.com^$ghide
+apkmirror.com##.ad-banner
+apkmirror.com##.ads-container
+apkmirror.com##.sponsored-content
+apkmirror.com##.popup-ads
+apkmirror.com###ad-iframe
+
+### **APKMonk Ads**
+apkmonk.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkmonk.com##+js(nostif, (), 45000)
+apkmonk.com##+js(set, check_adblock, true)
+apkmonk.com##+js(nowoif)
+@@||apkmonk.com^$ghide
+apkmonk.com##.ad-banner
+apkmonk.com##.ads-container
+apkmonk.com##.sponsored-content
+apkmonk.com##.popup-ads
+apkmonk.com###ad-iframe
+
+### **APK4Fun Ads**
+apk4fun.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apk4fun.com##+js(nostif, (), 45000)
+apk4fun.com##+js(set, check_adblock, true)
+apk4fun.com##+js(nowoif)
+@@||apk4fun.com^$ghide
+apk4fun.com##.ad-banner
+apk4fun.com##.ads-container
+apk4fun.com##.sponsored-content
+apk4fun.com##.popup-ads
+apk4fun.com###ad-iframe
+
+### **AndroidAPKMods Ads**
+androidapkmods.net##+js(aeld, /^(?:click|mousedown)$/, _0x)
+androidapkmods.net##+js(nostif, (), 45000)
+androidapkmods.net##+js(set, check_adblock, true)
+androidapkmods.net##+js(nowoif)
+@@||androidapkmods.net^$ghide
+androidapkmods.net##.ad-banner
+androidapkmods.net##.ads-container
+androidapkmods.net##.sponsored-content
+androidapkmods.net##.popup-ads
+androidapkmods.net###ad-iframe
+
+### **APK-DL Ads**
+apk-dl.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apk-dl.com##+js(nostif, (), 45000)
+apk-dl.com##+js(set, check_adblock, true)
+apk-dl.com##+js(nowoif)
+@@||apk-dl.com^$ghide
+apk-dl.com##.ad-banner
+apk-dl.com##.ads-container
+apk-dl.com##.sponsored-content
+apk-dl.com##.popup-ads
+apk-dl.com###ad-iframe
+
+### **APKFreeAds**
+apkfreeads.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkfreeads.com##+js(nostif, (), 45000)
+apkfreeads.com##+js(set, check_adblock, true)
+apkfreeads.com##+js(nowoif)
+@@||apkfreeads.com^$ghide
+apkfreeads.com##.ad-banner
+apkfreeads.com##.ads-container
+apkfreeads.com##.sponsored-content
+apkfreeads.com##.popup-ads
+apkfreeads.com###ad-iframe
+
+### **ModApkDown Ads**
+modapkdown.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+modapkdown.com##+js(nostif, (), 45000)
+modapkdown.com##+js(set, check_adblock, true)
+modapkdown.com##+js(nowoif)
+@@||modapkdown.com^$ghide
+modapkdown.com##.ad-banner
+modapkdown.com##.ads-container
+modapkdown.com##.sponsored-content
+modapkdown.com##.popup-ads
+modapkdown.com###ad-iframe
+
+### **APKReal Ads**
+apkreal.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkreal.com##+js(nostif, (), 45000)
+apkreal.com##+js(set, check_adblock, true)
+apkreal.com##+js(nowoif)
+@@||apkreal.com^$ghide
+apkreal.com##.ad-banner
+apkreal.com##.ads-container
+apkreal.com##.sponsored-content
+apkreal.com##.popup-ads
+apkreal.com###ad-iframe
+
+### **ModAPKStore Ads**
+modapkstore.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+modapkstore.com##+js(nostif, (), 45000)
+modapkstore.com##+js(set, check_adblock, true)
+modapkstore.com##+js(nowoif)
+@@||modapkstore.com^$ghide
+modapkstore.com##.ad-banner
+modapkstore.com##.ads-container
+modapkstore.com##.sponsored-content
+modapkstore.com##.popup-ads
+modapkstore.com###ad-iframe
+### **APK4Fun Ads**
+apk4fun.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apk4fun.com##+js(nostif, (), 45000)
+apk4fun.com##+js(set, check_adblock, true)
+apk4fun.com##+js(nowoif)
+@@||apk4fun.com^$ghide
+apk4fun.com##.ad-banner
+apk4fun.com##.ads-container
+apk4fun.com##.sponsored-content
+apk4fun.com##.popup-ads
+apk4fun.com###ad-iframe
+
+### **AndroidAPKMods Ads**
+androidapkmods.net##+js(aeld, /^(?:click|mousedown)$/, _0x)
+androidapkmods.net##+js(nostif, (), 45000)
+androidapkmods.net##+js(set, check_adblock, true)
+androidapkmods.net##+js(nowoif)
+@@||androidapkmods.net^$ghide
+androidapkmods.net##.ad-banner
+androidapkmods.net##.ads-container
+androidapkmods.net##.sponsored-content
+androidapkmods.net##.popup-ads
+androidapkmods.net###ad-iframe
+
+### **APK-DL Ads**
+apk-dl.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apk-dl.com##+js(nostif, (), 45000)
+apk-dl.com##+js(set, check_adblock, true)
+apk-dl.com##+js(nowoif)
+@@||apk-dl.com^$ghide
+apk-dl.com##.ad-banner
+apk-dl.com##.ads-container
+apk-dl.com##.sponsored-content
+apk-dl.com##.popup-ads
+apk-dl.com###ad-iframe
+
+### **APKReal Ads**
+apkreal.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkreal.com##+js(nostif, (), 45000)
+apkreal.com##+js(set, check_adblock, true)
+apkreal.com##+js(nowoif)
+@@||apkreal.com^$ghide
+apkreal.com##.ad-banner
+apkreal.com##.ads-container
+apkreal.com##.sponsored-content
+apkreal.com##.popup-ads
+apkreal.com###ad-iframe
+
+### **ModAPKStore Ads**
+modapkstore.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+modapkstore.com##+js(nostif, (), 45000)
+modapkstore.com##+js(set, check_adblock, true)
+modapkstore.com##+js(nowoif)
+@@||modapkstore.com^$ghide
+modapkstore.com##.ad-banner
+modapkstore.com##.ads-container
+modapkstore.com##.sponsored-content
+modapkstore.com##.popup-ads
+modapkstore.com###ad-iframe
+
+### **ModApkDown Ads**
+modapkdown.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+modapkdown.com##+js(nostif, (), 45000)
+modapkdown.com##+js(set, check_adblock, true)
+modapkdown.com##+js(nowoif)
+@@||modapkdown.com^$ghide
+modapkdown.com##.ad-banner
+modapkdown.com##.ads-container
+modapkdown.com##.sponsored-content
+modapkdown.com##.popup-ads
+modapkdown.com###ad-iframe
+
+### **APKFree Ads**
+apkfree.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkfree.com##+js(nostif, (), 45000)
+apkfree.com##+js(set, check_adblock, true)
+apkfree.com##+js(nowoif)
+@@||apkfree.com^$ghide
+apkfree.com##.ad-banner
+apkfree.com##.ads-container
+apkfree.com##.sponsored-content
+apkfree.com##.popup-ads
+apkfree.com###ad-iframe
+
+### **ApkPure Ads**
+apkpure.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+apkpure.com##+js(nostif, (), 45000)
+apkpure.com##+js(set, check_adblock, true)
+apkpure.com##+js(nowoif)
+@@||apkpure.com^$ghide
+apkpure.com##.ad-banner
+apkpure.com##.ads-container
+apkpure.com##.sponsored-content
+apkpure.com##.popup-ads
+apkpure.com###ad-iframe
+### **Subscene Ads**
+subscene.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+subscene.com##+js(nostif, (), 45000)
+subscene.com##+js(set, check_adblock, true)
+subscene.com##+js(nowoif)
+@@||subscene.com^$ghide
+subscene.com##.ad-banner
+subscene.com##.ads-container
+subscene.com##.sponsored-content
+subscene.com##.popup-ads
+subscene.com###ad-iframe
+subscene.com##div[id*="ad"]
+
+### **YIFY Subtitles Ads**
+yts-subs.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+yts-subs.com##+js(nostif, (), 45000)
+yts-subs.com##+js(set, check_adblock, true)
+yts-subs.com##+js(nowoif)
+@@||yts-subs.com^$ghide
+yts-subs.com##.ad-banner
+yts-subs.com##.ads-container
+yts-subs.com##.sponsored-content
+yts-subs.com##.popup-ads
+yts-subs.com###ad-iframe
+yts-subs.com##div[id*="ad"]
+
+### **OpenSubtitles Ads**
+opensubtitles.org##+js(aeld, /^(?:click|mousedown)$/, _0x)
+opensubtitles.org##+js(nostif, (), 45000)
+opensubtitles.org##+js(set, check_adblock, true)
+opensubtitles.org##+js(nowoif)
+@@||opensubtitles.org^$ghide
+opensubtitles.org##.ad-banner
+opensubtitles.org##.ads-container
+opensubtitles.org##.sponsored-content
+opensubtitles.org##.popup-ads
+opensubtitles.org###ad-iframe
+opensubtitles.org##div[id*="ad"]
+
+### **Addic7ed Ads**
+addic7ed.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
+addic7ed.com##+js(nostif, (), 45000)
+addic7ed.com##+js(set, check_adblock, true)
+addic7ed.com##+js(nowoif)
+@@||addic7ed.com^$ghide
+addic7ed.com##.ad-banner
+addic7ed.com##.ads-container
+addic7ed.com##.sponsored-content
+addic7ed.com##.popup-ads
+addic7ed.com###ad-iframe
+addic7ed.com##div[id*="ad"]
+
+### **Subtitles.hr Ads**
+subtitles.hr##+js(aeld, /^(?:click|mousedown)$/, _0x)
+subtitles.hr##+js(nostif, (), 45000)
+subtitles.hr##+js(set, check_adblock, true)
+subtitles.hr##+js(nowoif)
+@@||subtitles.hr^$ghide
+subtitles.hr##.ad-banner
+subtitles.hr##.ads-container
+subtitles.hr##.sponsored-content
+subtitles.hr##.popup-ads
+subtitles.hr###ad-iframe
+subtitles.hr##div[id*="ad"]
+
+### **Podnapisi.net Ads**
+podnapisi.net##+js(aeld, /^(?:click|mousedown)$/, _0x)
+podnapisi.net##+js(nostif, (), 45000)
+podnapisi.net##+js(set, check_adblock, true)
+podnapisi.net##+js(nowoif)
+@@||podnapisi.net^$ghide
+podnapisi.net##.ad-banner
+podnapisi.net##.ads-container
+podnapisi.net##.sponsored-content
+podnapisi.net##.popup-ads
+podnapisi.net###ad-iframe
+podnapisi.net##div[id*="ad"]
+### **General Google Ads**
+||googleads.g.doubleclick.net^
+||pagead2.googlesyndication.com^
+||google.com/ads^
+||googlesyndication.com^
+||partner.googleadservices.com^
+||static.doubleclick.net^
+||adservices.google.com^
+||ads.google.com^
+||www.googlesearch.com/ads^
+||admob.com^
+||admob.google.com^
+||adsense.google.com^
+||securepubads.g.doubleclick.net^
+||ads.rubiconproject.com^
+||ads.pubmatic.com^
+||www.googletagservices.com^
+||tpc.googlesyndication.com^
+||adclick.g.doubleclick.net^
+||www.google.com/ads^
+||googleads.g.doubleclick.net^
+||googlesyndication.com^
+
+### **Google Video Ads (YouTube, etc.)**
+youtube.com##.ytp-ad-module
+youtube.com##.ytp-ad-player-overlay
+youtube.com##.ytp-ad-text-overlay
+youtube.com##.ytp-ad-banner
+youtube.com##.video-ads
+youtube.com##.ytp-ad-overlay-slot
+youtube.com##.ytp-ad-timebar
+youtube.com##.ytp-ad-playlist
+youtube.com##.ytp-ad-duration-remaining
+youtube.com##.ytp-ad-skip-button
+youtube.com##.ad-showing
+youtube.com##.ytp-ad-skip-button-container
+youtube.com##.ytp-ad-overlay-slot
+youtube.com##.ytp-ad-player-overlay
+youtube.com##.ytp-ad-prompt-text
+youtube.com##.ytp-ad-announce
+
+### **Google Banner Ads**
+google.com##.banner-ad
+google.com##.banner-google-ad
+google.com##.google-ad-banner
+google.com##.google-ads
+google.com##.google_ads
+google.com##.ad-google
+google.com##.adsbygoogle
+
+### **Google Text Ads**
+google.com##.text-ad
+google.com##.google-text-ad
+google.com##.adsense-text
+google.com##.google-ad-text
+
+### **Google Pop-Up Ads**
+google.com##.popup-ad
+google.com##.google-popup
+google.com##.ads-popup
+
+### **Google Mobile Ads**
+google.com##.mobile-ad
+google.com##.ads-mobile
+google.com##.google-ad-mobile
+google.com##.adsense-mobile
+
+### **Google Search Ads**
+google.com##.search-ad
+google.com##.google-search-ad
+google.com##.google-suggest
+google.com##.ad-result
+google.com##.ad-highlight
+
+### **Google AdSense**
+adsense.google.com##.adsbygoogle
+adsense.google.com##.google-adsense
+adsense.google.com##.adsense-ad
+
+### **Google Analytics Ads**
+google-analytics.com##.google-analytics-ad
+google-analytics.com##.ga-ad-banner
+google-analytics.com##.ga-banner
+google-analytics.com##.analytics-ads
+
+### **Google Custom Search Ads**
+cse.google.com##.cse-ad
+cse.google.com##.google-cse-ad
+cse.google.com##.ad-cse
+### **Google Native Ads**
+google.com##.google-native-ad
+google.com##.adsbygoogle.native
+google.com##.google-native-ads
+google.com##.native-ad-google
+google.com##.ad-native-google
+
+### **Google Ad Manager**
+googlesyndication.com##.ad-manager
+googlesyndication.com##.google-ad-manager
+googlesyndication.com##.adsbygoogle-manager
+googlesyndication.com##.ad-manager-slot
+googlesyndication.com##.google-ads-manager
+googlesyndication.com##.google-dfp
+
+### **Google Display Ads**
+google.com##.display-ad
+google.com##.google-display-ad
+google.com##.ad-display-google
+google.com##.google-display-slot
+
+### **Google Search Ads on News Websites**
+news.google.com##.search-ad-google
+news.google.com##.google-news-ad
+news.google.com##.google-search-result-ad
+news.google.com##.google-news-ad-result
+
+### **Google Auto Ads**
+google.com##.auto-ad-google
+google.com##.google-auto-ads
+google.com##.auto-ads-by-google
+google.com##.google-auto-ad-banner
+
+### **Google Shopping Ads**
+google.com##.google-shopping-ad
+google.com##.shopping-ad-google
+google.com##.google-ad-shopping
+google.com##.ads-google-shopping
+
+### **Google Video Ads on Mobile (YouTube)**
+youtube.com##.ytp-ad-player-overlay
+youtube.com##.ytp-ad-skip-button
+youtube.com##.ytp-ad-duration-remaining
+youtube.com##.ytp-ad-skip-countdown
+youtube.com##.ytp-ad-overlay-slot
+youtube.com##.ytp-ad-container
+
+### **Google News Ads**
+news.google.com##.ads-news-google
+news.google.com##.google-news-ad
+news.google.com##.ad-google-news
+news.google.com##.google-news-banner
+
+### **Google Search Engine Ads on Websites**
+google.com##.google-search-ad-container
+google.com##.google-search-ads
+google.com##.ads-google-search
+google.com##.google-search-sponsored-links
+
+### **Google Play Store Ads**
+play.google.com##.ad-play-store
+play.google.com##.google-play-ad
+play.google.com##.ads-google-play
+
+### **Google Maps Ads**
+maps.google.com##.ad-google-maps
+maps.google.com##.google-maps-ad
+maps.google.com##.google-ads-map
+maps.google.com##.map-ad-google
+
+### **Google App Ads**
+google.com##.app-ad-google
+google.com##.google-app-ad
+google.com##.ads-google-app
+google.com##.google-app-ad-container
+
+### **Google AdSense on Blogs & Forums**
+blogspot.com##.adsense-banner
+blogspot.com##.adsense-ad
+forum.google.com##.google-adsense-ad
+forum.google.com##.ads-google-forums
+blogspot.com##.google-adsense
+
+### **Google Ad Display on Widgets**
+widget.google.com##.google-ad-widget
+widget.google.com##.ads-google-widget
+widget.google.com##.google-widget-ad
+widget.google.com##.ad-google-widget
+### **Google Interstitial Ads**
+google.com##.google-interstitial
+google.com##.interstitial-ad-google
+google.com##.google-ad-interstitial
+google.com##.ads-interstitial-google
+
+### **Google Banner Ads in Mobile Apps**
+google.com##.mobile-banner-google
+google.com##.ads-mobile-banner
+google.com##.google-banner-mobile
+google.com##.ads-mobile-ad
+
+### **Google App Promotion Ads**
+google.com##.google-app-promo-ad
+google.com##.app-promotion-google
+google.com##.google-promo-ad
+google.com##.ad-google-app-promo
+
+### **Google Ads in Google Play Store**
+play.google.com##.google-play-ad
+play.google.com##.google-play-banner-ad
+play.google.com##.ads-google-play-banner
+play.google.com##.google-play-ad-container
+
+### **Google AdSense Text and Banner Ads in Search Results**
+google.com##.search-result-ad-google
+google.com##.ads-google-search-results
+google.com##.google-search-banner-ad
+google.com##.google-search-text-ad
+
+### **Google Dynamic Remarketing Ads**
+google.com##.google-remarketing-ad
+google.com##.dynamic-remarketing-ad-google
+google.com##.google-dynamic-remarketing
+
+### **Google Push Notification Ads**
+google.com##.google-push-notification-ad
+google.com##.push-ad-google
+google.com##.google-push-ad
+google.com##.google-notification-ad
+
+### **Google Audio Ads**
+google.com##.google-audio-ad
+google.com##.audio-ad-google
+google.com##.ads-google-audio
+google.com##.google-ad-audio
+
+### **Google Smart Display Ads**
+google.com##.smart-display-ad
+google.com##.google-smart-display-ad
+google.com##.smart-ad-google
+google.com##.google-smart-ad-container
+
+### **Google DoubleClick Ads**
+doubleclick.net##.doubleclick-ad
+doubleclick.net##.ads-doubleclick
+doubleclick.net##.google-doubleclick-ad
+doubleclick.net##.ad-doubleclick
+
+### **Google Custom Search Ads (Webmasters)**
+cse.google.com##.cse-ad-result
+cse.google.com##.google-cse-ad
+cse.google.com##.ads-custom-search-google
+cse.google.com##.google-cse-search-ad
+
+### **Google Partner Ads**
+partner.google.com##.google-partner-ad
+partner.google.com##.ads-partner-google
+partner.google.com##.google-partner-banner
+partner.google.com##.partner-google-ads
+
+### **Google Carousel Ads**
+google.com##.google-carousel-ad
+google.com##.carousel-ad-google
+google.com##.google-ad-carousel
+google.com##.ads-carousel-google
+
+### **Google In-Article Ads**
+google.com##.in-article-ad-google
+google.com##.google-in-article-ad
+google.com##.ads-in-article-google
+google.com##.google-ad-in-article
+
+! Block banners and containers
+##.ad-banner
+##.ad-container
+##.advertisement
+##.sponsored
+##.promo-banner
+##.ad-slot
+##.ad-footer
+##.ad-header
+##.adsbygoogle
+
+! Block pop-ups
+||example.com^$popup
+##.popup
+##.overlay
+##.modal
+
+! Block trackers
+||google-analytics.com^
+||facebook.com/tr^
+||fbcdn.com/tracking/*
+||quantserve.com^
+||scorecardresearch.com^
+||adobe.com/analytics/*
+||analytics.twitter.com^
+||tracking.example.com^
+
+! Block video ads
+||youtube.com/get_video_info?*&adformat=
+||youtube.com/ptracking
+||youtube.com/api/stats/ads
+||vimeo.com/ad-delivery/*
+||hulu.com/ads/*
+||ads.mtvnservices.com^
+
+! Block social media annoyances
+facebook.com##.sponsored
+twitter.com##[data-testid="placementTracking"]
+instagram.com##.ad
+linkedin.com##.feed-sponsor
+##.share-button
+##.like-button
+##.social-share
+
+! Block cookie banners (GDPR annoyances)
+##.cookie-consent
+##.cookie-banner
+##.gdpr-consent
+##.eu-cookie-compliance
+
+! Block third-party scripts and frames
+||*.tracking.com^$third-party
+||example.com^$script
+||*.ads.*
+||adserver.example.com^$third-party
+||*.iframeadserver.*
+
+! Block in-page pop-ups
+##.newsletter-popup
+##.email-subscribe-popup
+##.login-popup
+
+! Block unverified redirects
+||*.clickbait-site.com^
+||*.malware-site.com^
+||*.unwanted-redirects.com^
+
+
+! --------------------------------
+! End of File
